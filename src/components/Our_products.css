@@ -22,9 +22,14 @@
 .product-image{
     width: 100%;
     border-radius: 10px 10px 0 0;
-    height: 215px;
+    height: 215px !important;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 0.5s all ease-in-out;
+}
+.product-image:hover{
+    height: 215px !important;
+    transform: scale(1.2);
 }
 #burger1{
     background-image: url("/src/Images/burger.jpg");
@@ -56,6 +61,11 @@
     margin: 24px 0 0;
     border: 1px solid rgba(255, 149, 0, 0.719);
     border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.product-item:hover{
+    box-shadow: 0px 0px 50px 0px rgb(150, 150, 150);
 }
 .product-down-part{
     padding: 20px;
@@ -70,6 +80,12 @@
     color: #ff7b00;
     border: 2px solid #ffd000;
     border-radius: 50px;
+    transition: 0.5s;
+}
+.order-now-button:hover{
+    border: 2px solid #ff7b00;
+    color: white;
+    background-color: #ff7b00;
 }
 .order-now-button .fa-cart-shopping{
     margin-right: 10px;
