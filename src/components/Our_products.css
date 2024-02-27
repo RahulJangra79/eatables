@@ -1,0 +1,76 @@
+.component-4{
+    height: 1170px;
+    width: 100%;
+    padding: 48px 12px;
+}
+.products{
+    margin: 0 95px;
+    padding: 48px 12px;
+}
+.h1-our-product{
+    font-size: 40px;
+    font-family: Raleway;
+    margin: 0 0 8px;
+    text-align: left;
+    color: #45595B;
+    font-weight: 600;
+}
+.product-gallery-row{
+    display: flex;
+    justify-content: space-between;
+}
+.product-image{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 215px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#burger1{
+    background-image: url("/src/Images/burger.jpg");
+}
+#samosa2{
+    background-image: url("/src/Images/samosa.jpg");
+}
+#steam-momos3{
+    background-image: url("/src/Images/steam-momos.jpg");
+}
+#dahi-golgappe4{
+    background-image: url("/src/Images/dahi-golgappe.jpg");
+}
+#noodles5{
+    background-image: url("/src/Images/noodles.jpg");
+}
+#spring-roll6{
+    background-image: url("/src/Images/spring-roll.jpg");
+}
+#manchurian7{
+    background-image: url("/src/Images/manchurian.jpg");
+}
+#pizza8{
+    background-image: url("/src/Images/pizza.jpg");
+}
+.product-item{
+    width: 305px;
+    height: 425px;
+    margin: 24px 0 0;
+    border: 1px solid rgba(255, 149, 0, 0.719);
+    border-radius: 10px;
+}
+.product-down-part{
+    padding: 20px;
+}
+.order-details{
+    display: flex;
+    justify-content: space-between;
+}
+.order-now-button{
+    width: 150px;
+    background: transparent;
+    color: #ff7b00;
+    border: 2px solid #ffd000;
+    border-radius: 50px;
+}
+.order-now-button .fa-cart-shopping{
+    margin-right: 10px;
+}

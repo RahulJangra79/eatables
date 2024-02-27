@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap'); 
+
+.component-5{
+    height: 655px;
+    width: 100%;
+}
+.bigger-products{
+    height: 560px;
+    margin: 0 95px;
+    padding: 48px 12px;
+}
+.bigger-product-items{
+    margin: -24px -12px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+.bigger-product-item{
+    height: 463px;
+    width: 440px;
+    margin: 24px 10px 0;
+    border: 1px solid orange;
+    border-radius: 10px;
+    position: relative;
+}
+.bigger-product-item-image{
+    width: 100%;
+    height: 330px;
+    border-radius: 10px 10px 0 0;
+    background-size: 463px 330px;
+    background-repeat: no-repeat;
+}
+#fries-11{
+    background-image: url("/src/Images/fries.jpg");
+}
+#kachori-22{
+    background-image: url("/src/Images/kachori.jpg");
+}
+#fry-momos-33{
+    background-image: url("/src/Images/fry-momos.jpg");
+}
+
+.bigger-product-solid-color-orange{
+    background-color: rgb(231, 126, 14);
+    height: 131px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+.bigger-product-solid-color-maroon{
+    background-color:  #a22458;
+    height: 131px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+.bigger-product-solid-color-yellow{
+    background-color: rgb(236, 184, 14);
+    height: 131px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+.bigger-product-item-center-part{
+    height: 130px;
+    width: 250px;
+    padding: 25px;
+    font-size: 20px;
+    font-family: Raleway;
+    background-color: white;
+    position: absolute;
+    top: 260px;
+    left: 80px;
+    border-radius: 10px;
+}
+.bigger-product-item-center-part h3{
+    color: rgb(89, 89, 89);
+}
+.bigger-product-item-center-part p{
+    font-weight: 600;
+    color: #45595b;
+}
