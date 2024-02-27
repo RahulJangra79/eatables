@@ -60,7 +60,7 @@
     background-image: url('/src/Images/manchurian.jpg');
     height: 150px;
     width: 150px;
-    background-size: 150px 150px;
+    background-size: 200px 150px;
     border-radius: 50%;
     background-repeat: no-repeat;
 }
@@ -80,7 +80,7 @@
     background-image: url('/src/Images/noodles.jpg');
     height: 150px;
     width: 150px;
-    background-size: 150px 150px;
+    background-size: 170px 150px;
     border-radius: 50%;
     background-repeat: no-repeat;
 }
