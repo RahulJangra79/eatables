@@ -40,28 +40,28 @@
 
 .kachori-photo{
     background-image: url('/src/Images/kachori.jpg');
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
     border-radius: 50%;
-    background-size: 200px 200px;
     background-repeat: no-repeat;
 }
 
 .fries-photo{
     background-image: url('/src/Images/fries.jpg');
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
     border-radius: 50%;
-    background-size: 200px 200px;
     background-repeat: no-repeat;
 }
 
 .manchurian-photo{
     background-image: url('/src/Images/manchurian.jpg');
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
     border-radius: 50%;
-    background-size: 200px 200px;
     background-repeat: no-repeat;
 }
 
@@ -78,28 +78,28 @@
 
 .noodles-photo{
     background-image: url('/src/Images/noodles.jpg');
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
     border-radius: 50%;
-    background-size: 200px 200px;
     background-repeat: no-repeat;
 }
 
 .springroll-photo{
     background-image: url('/src/Images/spring-roll.jpg');
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
     border-radius: 50%;
-    background-size: 200px 200px;
     background-repeat: no-repeat;
 }
 
 .dahi-golgappe-photo{
     background-image: url('/src/Images/dahi-golgappe.jpg');
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
     border-radius: 50%;
-    background-size: 200px 200px;
     background-repeat: no-repeat;
 }
 
@@ -126,11 +126,11 @@
     color: #455958;
     font-size: 24px;
     font-weight: 600;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .product-rating-buy-now-btn{
-    margin-top: 20px;
+    margin-top: 10px;
     height: 40px;
     width: 150px;
     color: rgb(52, 191, 52);
