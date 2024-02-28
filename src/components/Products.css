@@ -141,7 +141,7 @@
 }
 
 .product-rating-buy-now-btn:hover{
-    background-color: orange;
+    background-color: #ffd000;
     color: white;
 }
 
@@ -234,7 +234,7 @@
 }
 
 .bestseller-second-component-image1-des-buy-btn:hover{
-    background-color: orange;
+    background-color: #ffd000;
     color: white;
 }
 
