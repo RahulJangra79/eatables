@@ -60,9 +60,11 @@
     border-radius: 30px;
     font-size: 18px;
     color: #455958;
+    transition: 0.5s;
 }
 
 .buy-btn:hover{
     background: rgb(32, 157, 32);
-   
+    color: white;
+    font-weight: 600;
 }
