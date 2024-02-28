@@ -18,9 +18,9 @@
     font-size: 40px;
     color: #81C408;
     font-weight: 600;
-    padding-top: 50px;
+    padding-top: 80px;
     font-family: "Raleway", sans-serif;
-    padding-left: 100px;
+    padding-left: 170px;
 }
 
 .search-bar-footer{
@@ -32,6 +32,7 @@
     margin-bottom: 25px;
     width: 500px;
     position: relative;
+    
 }
 .search-bar-input-box-footer{
     flex: 1;
@@ -46,7 +47,7 @@
 }
 .search-button-footer{
     position: absolute;
-    height: 50px;
+    height: 40px;
     width: 170px !important;
     border-radius: 30px;
     background-color: #81C408;
@@ -182,14 +183,14 @@ ul a{
     width: 300px;
     /*border: 2px solid black;*/
     margin-top: 30px;
-    margin-left: 90px;
+    margin-left: 165px;
     color: white;
     font-size: 18px;
 
 }
 .last2{
     color: white;
-    margin-left: 350px;
+    margin-left: 550px;
     margin-top: 30px;
     font-size: 18px;
 }
