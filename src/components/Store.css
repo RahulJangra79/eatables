@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.store1{
+    height: 650px;
+    width: 100%;
+    background: rgb(255, 165, 0, 0.85);
+    font-family: Raleway;
+}
+
+.burger-big{
+    background-image: url('/src/Images/burger-big.png');
+    height: 700px;
+    width: 550px;
+    background-size: 550px 700px;
+    background-repeat: no-repeat;
+    margin-right: 150px;
+}
+
+.store2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+.the-text{
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.fresh-food{
+    color: white;
+    font-weight: bolder;
+    margin-right: 210px;
+}
+
+.our-store{
+    color: #455958;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.store-des{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 150px;
+    color: #455958;
+    margin-top: 20px;
+}
+
+.buy-btn{
+    margin-left: 130px;
+    margin-top: 20px;
+    height: 60px;
+    width: 150px;
+    align-items: left;
+    margin-right: 600px;
+    background: rgb(255, 165, 0, 0.85);
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #455958;
+}
+
+.buy-btn:hover{
+    background: rgb(32, 157, 32);
+   
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap'); 
+.bestseller{
+    margin-top: 150px;
+    color: #455958;
+    font-size: 58px;
+    font-weight: bolder;
+    font-style: Raleway;
+}
+
+.bestseller-des{
+    color: #455958;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center; 
+    width: 700px;
+    margin-left: 450px;
+} 
+
+.bestseller-products-items{
+    margin-top: 50px;
+}
+
+.bestseller-products-items-1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.bestseller-border{
+    border-radius: 15px;
+    background: rgb(244, 246, 246);
+    height: 200px;
+    width: 400px;
+    color: #747D88;
+    padding: 24px;
+    display: flex;
+}
+
+
+.kachori-photo{
+    background-image: url('/src/Images/kachori.jpg');
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.fries-photo{
+    background-image: url('/src/Images/fries.jpg');
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.manchurian-photo{
+    background-image: url('/src/Images/manchurian.jpg');
+    height: 150px;
+    width: 150px;
+    background-size: 200px 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+
+.bestseller-products-items-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px; 
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+
+.noodles-photo{
+    background-image: url('/src/Images/noodles.jpg');
+    height: 150px;
+    width: 150px;
+    background-size: 170px 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.springroll-photo{
+    background-image: url('/src/Images/spring-roll.jpg');
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.dahi-golgappe-photo{
+    background-image: url('/src/Images/dahi-golgappe.jpg');
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.same{
+    margin-left: 40px;
+    text-align: left;
+}
+
+.product-rating-name{
+    color: #455958;
+    font-size: 22px;
+    font-style: Raleway;
+    font-weight: 500;
+}
+
+.product-rating-star{
+    margin-top: 10px;
+    color: lightgreen;
+    font-style: Raleway;
+}
+
+.product-rating-price{
+    font-style: Raleway;
+    color: #455958;
+    font-size: 24px;
+    font-weight: 600;
+    /* margin-top: 10px; */
+}
+
+.product-rating-buy-now-btn{
+    margin-top: 10px;
+    height: 40px;
+    width: 150px;
+    color: rgb(52, 191, 52);
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid #ffd000;
+   
+}
+
+.product-rating-buy-now-btn:hover{
+    background-color: orange;
+    color: white;
+}
+
+.product-rating-buy-now-btn i{
+    margin-right: 10px;
+}
+
+.bestseller-second-component{
+    margin-top: 30px;
+    display: flex;
+    height: 400px;
+    width: auto;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.bestseller-second-component-items{
+    height: 400px;
+    width: 300px;
+}
+
+.bestseller-second-component-image1{
+    background-image: url('/src/Images/pizza.jpg');
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.bestseller-second-component-image2{
+    background-image: url('/src/Images/steam-momos.jpg');
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.bestseller-second-component-image3{
+    background-image: url('/src/Images/pani-golgappe.jpg');
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.bestseller-second-component-image4{
+    background-image: url('/src/Images/samosa.jpg');
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.bestseller-second-component-image1-des{
+    text-align: center;
+}
+
+.bestseller-second-component-image1-des-name{
+    color: #455958;
+    font-size: 25px;
+    font-style: Raleway;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.bestseller-second-component-image1-des-star{
+    margin-top: 10px;
+    color: lightgreen;
+    font-style: Raleway;
+}
+
+.bestseller-second-component-image1-des-price{
+    font-style: Raleway;
+    color: #455958;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.bestseller-second-component-image1-des-buy-btn{
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    color: rgb(52, 191, 52);
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid #ffd000;
+    margin-left: 75px;
+    line-height: 35px;
+}
+
+.bestseller-second-component-image1-des-buy-btn:hover{
+    background-color: orange;
+    color: white;
+}
+
+.bestseller-second-component-image1-des-buy-btn i{
+    margin-right: 10px;
+}

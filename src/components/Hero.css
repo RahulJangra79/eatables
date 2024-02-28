@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+.hero-main {
+    background-image: url("/src/Images/background-banner-safeimagekit.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 520px;
+    width: 100%;
+    z-index: 0;
+    position: relative; 
+}
+.hero-sections{
+    display: flex;
+    justify-content: space-between;
+}
+.heading-and-search {
+    position: absolute; 
+    z-index: 1;
+    width: 780px;
+    height: 305px;
+    top: 100px;
+    left: 100px;
+    text-align: left;
+}
+.delicious-taste{
+    color: #62052c;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Raleway;
+}
+.best-chinese-italian{
+    padding-top: 30px;
+    font-size: 80px;
+    font-family: Raleway;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    width: 700px;
+    color: #62052c;
+}
+.row{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    width: 600px;
+    position: relative;
+}
+.input-box{
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Raleway;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #62052c;
+    border-radius: 30px;
+}
+.search-button-hero{
+    position: absolute;
+    height: 43px;
+    width: 120px !important;
+    border-radius: 30px;
+    background-color: #62052c;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    right: 0px;
+}
