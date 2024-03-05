@@ -4,7 +4,7 @@ import {service} from "./data/ServiceCardContent.js";
 const Service_card = () => {
     console.log("data=>", service)
     return(
-        <div className="service-card-outer">
+        <div className="service-card-outer"> 
             <div className="service-detail-card">
                 {service.map((item,index)=>{
                   return ( <div key={index} className="service-detail-card-item">

@@ -7,6 +7,14 @@
     font-family: Raleway;
 }
 
+@media only screen and (max-width:415px)
+{
+    .store1{
+        height: 690px;
+        width: 100%;
+    }
+}
+
 .burger-big{
     background-image: url('/src/Images/burger-big.png');
     height: 700px;
@@ -16,10 +24,27 @@
     margin-right: 150px;
 }
 
+
+@media only screen and (max-width:415px)
+{
+    .burger-big{
+        width: 400px;
+        height: 400px;
+        background-size: 400px 400px;
+    }
+}
+
 .store2{
     display: flex;
     justify-content: space-evenly;
     padding-top: 100px;
+}
+
+@media only screen and (max-width:415px)
+{
+    .store2{
+        display: block;
+    }
 }
 
 .the-text{
@@ -27,10 +52,27 @@
     margin-top: 100px;
 }
 
+@media only screen and (max-width:415px)
+{
+    .the-text
+    {
+        font-size: 40px;
+        margin-top: -35px;
+    }
+}
+
 .fresh-food{
     color: white;
-    font-weight: bolder;
+    font-weight: 700;
     margin-right: 210px;
+}
+
+@media only screen and (max-width:415px)
+{
+    .fresh-food{
+        width: 300px;
+        margin-left: 20px;
+    }
 }
 
 .our-store{
@@ -40,12 +82,29 @@
     margin-top: 20px;
 }
 
+@media only screen and (max-width:415px)
+{
+    .our-store{
+       margin-left:20px;
+        margin-top: 10px;
+    }
+}
+
 .store-des{
     font-size: 18px;
     text-align: left;
     margin-left: 150px;
     color: #455958;
     margin-top: 20px;
+}
+
+@media only screen and (max-width:415px)
+{
+    .store-des{
+        margin-top: 15px;
+        width: 370px;
+        margin-left:20px;
+    }
 }
 
 .buy-btn{
@@ -61,6 +120,17 @@
     font-size: 18px;
     color: #455958;
     transition: 0.5s;
+}
+
+@media only screen and (max-width:415px)
+{
+    .buy-btn
+    {
+     margin-left:20px;
+    margin-top: 20px;
+    height: 65px;
+    width: 150px;
+}
 }
 
 .buy-btn:hover{
