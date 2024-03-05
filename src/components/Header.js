@@ -46,6 +46,9 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
+                    <div className="three-arrow-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                     <div className="nav-icons">
                         <div className="search-magnifying-glass">
                             <i class="fa-solid fa-magnifying-glass"></i>

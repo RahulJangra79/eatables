@@ -8,6 +8,13 @@
     z-index: 0;
     position: relative; 
 }
+@media only screen and (max-width:415px)
+{
+    .hero-main { 
+        height: 350px;
+        width: 100%; 
+    }
+}
 .hero-sections{
     display: flex;
     justify-content: space-between;
@@ -21,11 +28,25 @@
     left: 100px;
     text-align: left;
 }
+@media only screen and (max-width:415px)
+{
+    .heading-and-search {
+        top: 60px;
+        left: 20px;
+        width: 100%;
+    }
+}
 .delicious-taste{
     color: #62052c;
     font-size: 20px;
     font-weight: 700;
     font-family: Raleway;
+}
+@media only screen and (max-width:415px)
+{
+    .delicious-taste{
+        font-size: 18px;
+    }
 }
 .best-chinese-italian{
     padding-top: 30px;
@@ -36,6 +57,16 @@
     font-weight: 700;
     width: 700px;
     color: #62052c;
+}
+@media only screen and (max-width:415px)
+{
+    .best-chinese-italian{
+        padding-top: 25px;
+        font-size: 45px;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+        width: 400px;
+    }
 }
 .row{
     padding-top: 40px;
@@ -70,4 +101,14 @@
     font-size: 16px;
     cursor: pointer;
     right: 0px;
+}
+@media only screen and (max-width:415px)
+{
+    .row{
+        padding-left: 15px;
+        width: 300px;
+    }
+    .search-button-hero{
+        width: 100px !important;
+    }
 }
