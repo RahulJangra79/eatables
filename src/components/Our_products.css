@@ -3,9 +3,23 @@
     width: 100%;
     padding: 48px 12px;
 }
+@media only screen and (max-width:415px)
+{
+    .component-4{
+        height: 3770px;
+        width: 100%;
+    }
+}
 .products{
     margin: 0 95px;
     padding: 48px 12px;
+}
+@media only screen and (max-width:415px)
+{
+    .products{
+        margin: 0 30px;
+        padding: 20px 10px;
+    }
 }
 .h1-our-product{
     font-size: 40px;
@@ -15,9 +29,21 @@
     color: #45595B;
     font-weight: 600;
 }
+@media only screen and (max-width:415px)
+{
+    .h1-our-product{
+        font-size: 30px;
+    }
+}
 .product-gallery-row{
     display: flex;
     justify-content: space-between;
+}
+@media only screen and (max-width:415px)
+{
+    .product-gallery-row{
+        display: block;
+    }
 }
 .product-image{
     width: 100%;
