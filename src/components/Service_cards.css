@@ -1,5 +1,5 @@
 .service-card-outer{
-    height: 465px;
+    height: auto;
     width: 100%;
     padding: 48px 12px;
 }
@@ -14,6 +14,7 @@
     margin: 0 95px;
     padding: 48px 12px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 @media only screen and (max-width: 415px){
