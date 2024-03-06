@@ -9,18 +9,16 @@
     }
 }
 .service-detail-card{
-    width: 1320px;
+    width: 100%;
     height: 365px;
     margin: 0 95px;
     padding: 48px 12px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-@media only screen and (max-width: 415px){
-    .service-detail-card{
-        width: 100%;
-        height: 1200px;
+
+    @media only screen and (max-width: 415px){
+        /* height: 1200px; */
         margin: 0;
         padding: 20px 10px;
         display: block;
