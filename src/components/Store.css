@@ -15,6 +15,14 @@
     }
 }
 
+@media only screen and (min-width:415px) and (max-width:1050px)
+{
+    .store1{
+        height: 100% !important;
+        width: 100%;
+    }
+}
+
 .burger-big{
     background-image: url('/src/Images/burger-big.png');
     height: 700px;
@@ -34,6 +42,17 @@
     }
 }
 
+@media only screen and (min-width:415px) and (max-width:1050px)
+{
+   
+    .burger-big{
+        width: 70%;
+        height: 600px;
+        background-size: 100% 600px;
+        margin-left: 15%;
+    }
+}
+
 .store2{
     display: flex;
     justify-content: space-evenly;
@@ -41,6 +60,13 @@
 }
 
 @media only screen and (max-width:415px)
+{
+    .store2{
+        display: block;
+    }
+}
+
+@media only screen and (min-width:415px) and (max-width:1050px)
 {
     .store2{
         display: block;
@@ -61,6 +87,17 @@
     }
 }
 
+@media only screen and (min-width:415px) and (max-width:1050px)
+{
+   
+    .the-text
+    {
+        margin: 0;
+        font-size: 500%;
+        margin-top: -35px;
+    }
+}
+
 .fresh-food{
     color: white;
     font-weight: 700;
@@ -72,6 +109,16 @@
     .fresh-food{
         width: 300px;
         margin-left: 20px;
+    }
+}
+
+
+@media only screen and (min-width:415px) and (max-width:1050px)
+{
+   
+    .fresh-food{
+        width: 100%;
+        /* margin-left: 15%; */
     }
 }
 
@@ -90,6 +137,15 @@
     }
 }
 
+@media only screen and (min-width:415px) and (max-width:1050px)
+{
+    .our-store{
+        margin-left: 15%;
+        width: 85%;
+         margin-top: 10px;
+     }
+}
+
 .store-des{
     font-size: 18px;
     text-align: left;
@@ -104,6 +160,17 @@
         margin-top: 15px;
         width: 370px;
         margin-left:20px;
+    }
+}
+
+
+@media only screen and (min-width:415px) and (max-width:1050px)
+{
+    .store-des{
+        width: 80%;
+        margin-top: 15px;
+        font-size: 30%;
+        margin-left: 15%;
     }
 }
 
@@ -127,6 +194,15 @@
     .buy-btn
     {
      margin-left:20px;
+    margin-top: 20px;
+    height: 65px;
+    width: 150px;
+}
+}
+
+@media only screen and (min-width:415px) and (max-width:1050px)
+{
+    .buy-btn{
     margin-top: 20px;
     height: 65px;
     width: 150px;

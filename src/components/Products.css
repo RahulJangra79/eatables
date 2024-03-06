@@ -78,7 +78,7 @@
     background-image: url('/src/Images/kachori.jpg');
     height: 150px;
     width: 150px;
-    background-size: 150px 150px;
+    background-size: 100% 100%;
     border-radius: 50%;
     background-repeat: no-repeat;
 }
@@ -122,7 +122,7 @@
     background-image: url('/src/Images/noodles.jpg');
     height: 150px;
     width: 150px;
-    background-size: 170px 150px;
+    background-size: 100% 100%;
     border-radius: 50%;
     background-repeat: no-repeat;
 }
