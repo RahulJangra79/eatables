@@ -18,6 +18,13 @@
     }
 }
 
+@media only screen and (min-width:415px) and (max-width:860px)
+{
+    .bestseller{
+        font-size: 50px;
+    }
+}
+
 .bestseller-des{
     color: #455958;
     font-size: 18px;
@@ -38,12 +45,22 @@
     } 
 }
 
+@media only screen and (min-width:415px) and (max-width:860px)
+{
+    .bestseller-des{
+        font-size: 17px;
+        width: 80%;
+        margin-left: 10%;
+    } 
+}
+
 .bestseller-products-items{
     margin-top: 50px;
 }
 
 .bestseller-products-items-1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-left: 100px;
     padding-right: 100px;
@@ -56,6 +73,14 @@
         margin-top: -20px;
     }
 }
+
+@media only screen and (min-width:415px) and (max-width:860px)
+{
+    .bestseller-products-items-1{
+        display: block;
+    }
+}
+
 .bestseller-border{
     border-radius: 15px;
     background: rgb(244, 246, 246);
@@ -64,9 +89,20 @@
     color: #747D88;
     padding: 24px;
     display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    margin: 10px;
 }
 
 @media only screen and (max-width:415px)
+{
+    .bestseller-border{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width:415px) and (max-width:860px)
 {
     .bestseller-border{
         width: 100%;
@@ -103,6 +139,7 @@
 
 .bestseller-products-items-2{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 25px; 
     padding-left: 100px;
@@ -115,6 +152,13 @@
         display: block;
         padding: 20px;
         margin-top: -40px;
+    }
+}
+
+@media only screen and (min-width:415px) and (max-width:860px)
+{
+    .bestseller-products-items-2{
+        display: block;
     }
 }
 
@@ -146,7 +190,7 @@
 }
 
 .same{
-    margin-left: 40px;
+    margin-left: 10%;
     text-align: left;
 }
 
@@ -201,12 +245,18 @@
 @media only screen and (max-width:415px)
 {
     .bestseller-second-component{
-        margin-top: 30px;
         display: block;
         height: 1780px;
         width: auto;
-        justify-content: space-between;
-        padding: 0 120px;
+    }
+}
+
+@media only screen and (min-width:415px) and (max-width:860px)
+{
+    .bestseller-second-component{
+        display: flex;
+        flex-wrap: wrap;
+        height: 900px;
     }
 }
 
@@ -240,7 +290,6 @@
     height: 250px;
     width: 350px;
     background-size: 350px 250px;
-    border-radius: 15px;
 }
 }
 
