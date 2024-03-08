@@ -22,7 +22,6 @@ const Our_products = () => {
                                 </div>
                             </div>
 
-
                             <div className="product-item">
                                 <div className="product-image" id="samosa2"></div>
                                 <div className="product-down-part">
@@ -34,7 +33,6 @@ const Our_products = () => {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div className="product-item">
                                 <div className="product-image" id="steam-momos3"></div>
@@ -48,7 +46,6 @@ const Our_products = () => {
                                 </div>
                             </div>
 
-
                             <div className="product-item">
                                 <div className="product-image" id="dahi-golgappe4"></div>
                                 <div className="product-down-part">
@@ -60,14 +57,7 @@ const Our_products = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
-
-
-
-
-                        <div className="product-gallery-row">
+                            
                             <div className="product-item">
                                 <div className="product-image" id="noodles5"></div>
                                 <div className="product-down-part">
@@ -79,7 +69,6 @@ const Our_products = () => {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div className="product-item">
                                 <div className="product-image" id="spring-roll6"></div>
@@ -93,7 +82,6 @@ const Our_products = () => {
                                 </div>
                             </div>
 
-
                             <div className="product-item">
                                 <div className="product-image" id="manchurian7"></div>
                                 <div className="product-down-part">
@@ -105,7 +93,6 @@ const Our_products = () => {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div className="product-item">
                                 <div className="product-image" id="pizza8"></div>
