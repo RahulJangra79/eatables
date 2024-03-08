@@ -89,7 +89,7 @@
     color: #747D88;
     padding: 24px;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* justify-content: space-evenly; */
     margin: 10px;
 }
@@ -238,8 +238,8 @@
     display: flex;
     height: 400px;
     width: auto;
-    justify-content: space-between;
-    padding: 0 120px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width:415px)
@@ -248,21 +248,35 @@
         display: block;
         height: 1780px;
         width: auto;
+        margin-left: 29%;
     }
 }
 
-@media only screen and (min-width:415px) and (max-width:860px)
+@media only screen and (min-width: 415px) and (max-width: 640px)
 {
     .bestseller-second-component{
-        display: flex;
-        flex-wrap: wrap;
-        height: 900px;
+        height: 1800px;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 790px)
+{
+    .bestseller-second-component{
+        height: 1050px;
+    }
+}
+
+@media only screen and (min-width: 790px) and (max-width: 1501px)
+{    
+    .bestseller-second-component{
+        height: 1000px;
     }
 }
 
 .bestseller-second-component-items{
     height: 400px;
     width: 300px;
+    margin: 10px;
 }
 
 @media only screen and (max-width:415px)
@@ -275,6 +289,20 @@
     }
 }
 
+@media only screen and (min-width: 415px) and (max-width: 790px)
+{ 
+    .bestseller-second-component-items{
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 790px) and (max-width: 1501px)
+{    
+    .bestseller-second-component-items{
+        margin-top: 30px;
+    }
+}
+
 .bestseller-second-component-image1{
     background-image: url('/src/Images/pizza.jpg');
     height: 200px;
@@ -291,6 +319,16 @@
     width: 350px;
     background-size: 350px 250px;
 }
+}
+
+@media only screen and (min-width: 790px) and (max-width: 1501px)
+{    
+    .bestseller-second-component-image1{
+        background-image: url('/src/Images/pizza.jpg');
+        height: 250px;
+        width: 350px;
+        background-size: 350px 250px;
+    }
 }
 
 .bestseller-second-component-image2{
@@ -310,6 +348,16 @@
     background-size: 350px 250px;
     border-radius: 15px;
 }
+}
+
+@media only screen and (min-width: 790px) and (max-width: 1501px)
+{    
+    .bestseller-second-component-image2{
+        background-image: url('/src/Images/steam-momos.jpg');
+        height: 250px;
+        width: 350px;
+        background-size: 350px 250px;
+    }
 }
 
 .bestseller-second-component-image3{
@@ -328,6 +376,16 @@
         width: 350px;
         background-size: 350px 250px;
         border-radius: 15px;
+    }
+}
+
+@media only screen and (min-width: 790px) and (max-width: 1501px)
+{    
+    .bestseller-second-component-image3{
+        background-image: url('/src/Images/pani-golgappe.jpg');
+        height: 250px;
+        width: 350px;
+        background-size: 350px 250px;
     }
 }
 
@@ -350,8 +408,26 @@
     }
 }
 
+@media only screen and (min-width: 790px) and (max-width: 1501px)
+{    
+    .bestseller-second-component-image4{
+        background-image: url('/src/Images/samosa.jpg');
+        height: 250px;
+        width: 350px;
+        background-size: 350px 250px;
+    }
+}
+
 .bestseller-second-component-image1-des{
     text-align: center;
+}
+
+@media only screen and (min-width: 790px) and (max-width: 1501px)
+{    
+    .bestseller-second-component-image1-des{
+        text-align: center;
+    }
+    
 }
 
 .bestseller-second-component-image1-des-name{
