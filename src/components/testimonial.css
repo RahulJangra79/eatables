@@ -7,12 +7,27 @@
     font-family: "Raleway",sans-serif;
     font-weight: 500;                            ;
 }
+@media only screen and (max-width: 415px)
+{
+    .test h2{
+        font-weight: 600;
+        font-size: 22px;
+    }
+}
 .test1 h1{
     font-size: 50px;
     margin-top: -20px;
     color: #45595b;
     margin-top: 10px;
 }
+@media only screen and (max-width: 415px)
+{
+    .test1 h1{
+        font-size: 35px;
+        font-weight: 700;
+    }
+}
+
 .test2{
     /*border: 2px solid black;*/
     height: 50px;
@@ -23,6 +38,12 @@
     justify-content: space-evenly;
     padding: 10px;
 }
+@media only screen and (max-width: 415px)
+{
+    .test2{
+        margin-top: -20px;
+    }
+}
 .btn1 i{
     color: #81C408;
     border: 0.5px solid #FFB524;
@@ -31,6 +52,13 @@
     border-radius: 20px;
     margin-left: 1200px;
     line-height: 30px;
+}
+
+@media only screen and (max-width: 415px)
+{
+    .btn1 i{
+        margin-left: 340px;
+    }
 }
 .btn2 i{
     color: #81C408;
@@ -41,12 +69,22 @@
     margin-right: 150px;
     line-height: 30px;
 }
+
+@media only screen and (max-width: 415px)
+{
+    .btn1 i{
+        margin-right: 20px;
+    }
+}
 .btn1 i:hover{
     background-color: #FFB524;
 }
 .btn2 i:hover{
     background-color: #FFB524;
 }
+
+
+
 .client{
     /*border: 2px solid black;*/
     height: 300px;
@@ -56,6 +94,18 @@
     margin-top: 20px;
     justify-content: space-evenly;
 }
+@media only screen and (max-width: 415px)
+{
+    .client{
+        display: block;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 440px;
+    }
+}
+
+
 .client1{
     height: 230px;
     width: 550px;
@@ -67,6 +117,13 @@
     padding: 20px;
     position: relative;
 
+}
+@media only screen and (max-width: 415px)
+{
+    .client1{
+        width: 100%;
+        
+    }
 }
  hr{
     border-color: #ffb524;
@@ -118,6 +175,15 @@
     font-weight: 600;
     
 }
+
+@media only screen and (max-width: 415px)
+{
+    .icon{
+        margin-left: 280px;
+        font-size: 40px;
+        top: 160px;
+    }
+}
 .client2{
     height: 230px;
     width: 550px;
@@ -130,6 +196,13 @@
     position: relative;
 
 }
+@media only screen and (max-width: 415px)
+{
+    .client2{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
 .icon1{
     font-size: 50px;
     /*border: 2px solid black;*/
@@ -141,4 +214,12 @@
     top: 110px;
     font-weight: 600;
     
+}
+@media only screen and (max-width: 415px)
+{
+    .icon1{
+        margin-left: 280px;
+        font-size: 40px;
+        top: 160px;
+    }
 }
