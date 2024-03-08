@@ -1,5 +1,5 @@
 .component-4{
-    height: 1170px;
+    height: auto;
     width: 100%;
     padding: 48px 12px;
 }
@@ -7,18 +7,17 @@
 {
     .component-4{
         height: 3770px;
-        width: 100%;
     }
 }
 .products{
-    margin: 0 95px;
+    margin: 0 5%;
     padding: 48px 12px;
 }
 @media only screen and (max-width:415px)
 {
     .products{
-        margin: 0 30px;
-        padding: 20px 10px;
+        margin: 0 5% !important;
+        padding: 2% 1% !important;
     }
 }
 .h1-our-product{
@@ -37,19 +36,20 @@
 }
 .product-gallery-row{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-@media only screen and (max-width:415px)
+/* @media only screen and (max-width:750px)
 {
     .product-gallery-row{
         display: block;
     }
-}
+} */
 .product-image{
     width: 100%;
     border-radius: 10px 10px 0 0;
     height: 215px !important;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     transition: 0.5s all ease-in-out;
 }
@@ -83,12 +83,20 @@
 }
 .product-item{
     width: 305px;
-    height: 425px;
-    margin: 24px 0 0;
+    height: auto;
+    margin: 10px;
     border: 1px solid rgba(255, 149, 0, 0.719);
     border-radius: 10px;
     overflow: hidden;
     transition: 0.5s;
+}
+@media only screen and (min-width:415px) and (max-width:776px)
+{
+    .product-item{
+        width: 80%;
+        min-width: 305px !important;
+        max-width: 400px;
+    }
 }
 .product-item:hover{
     box-shadow: 0px 0px 50px 0px rgb(150, 150, 150);
