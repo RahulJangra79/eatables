@@ -1,5 +1,6 @@
 import React from "react";
 import "./Our_products.css"
+import { component6Data } from "./data/Component6Data";
 
 const Component6 = () => {
     return(
@@ -10,7 +11,22 @@ const Component6 = () => {
                 </div>
                     <div className="product-gallery">
                         <div className="product-gallery-row">
-                            <div className="product-item">
+                        {component6Data.map((item, index)=>{
+                            return (
+                                <div className="product-item">
+                                <div className="product-image" id={item.imageid}></div>
+                                <div className="product-down-part">
+                                    <h3>{item.name}</h3>
+                                    <p>{item.description}</p>
+                                    <div className="order-details">
+                                        <h3 className="product-price">$ {item.price}</h3>
+                                        <button className="order-now-button"><span><i class="fa-solid fa-cart-shopping"></i></span>Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            )
+                           }) }
+                            {/* <div className="product-item">
                                 <div className="product-image" id="burger1"></div>
                                 <div className="product-down-part">
                                     <h3>Burger</h3>
@@ -21,7 +37,6 @@ const Component6 = () => {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div className="product-item">
                                 <div className="product-image" id="samosa2"></div>
@@ -35,7 +50,6 @@ const Component6 = () => {
                                 </div>
                             </div>
 
-
                             <div className="product-item">
                                 <div className="product-image" id="steam-momos3"></div>
                                 <div className="product-down-part">
@@ -48,7 +62,6 @@ const Component6 = () => {
                                 </div>
                             </div>
 
-
                             <div className="product-item">
                                 <div className="product-image" id="dahi-golgappe4"></div>
                                 <div className="product-down-part">
@@ -59,7 +72,7 @@ const Component6 = () => {
                                         <button className="order-now-button"><span><i class="fa-solid fa-cart-shopping"></i></span>Order Now</button>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
