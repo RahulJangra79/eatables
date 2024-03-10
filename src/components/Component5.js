@@ -12,7 +12,7 @@ const Component5 = () => {
                         return(
                             <div className="bigger-product-item">
                                 <div className="bigger-product-item-image" id={item.imageid}></div>
-                                <div className="bigger-product-solid-color-orange"></div>
+                                <div className={item.big_sld_clr_class}></div>
                                 <div className="bigger-product-item-center-part">
                                     <h3>{item.name}</h3>
                                     <p>{item.offer}</p>
