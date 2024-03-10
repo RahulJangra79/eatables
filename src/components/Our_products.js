@@ -1,7 +1,8 @@
 import React from "react";
 import "./Our_products.css"
-
+import { productsData } from "./data/ProductsData";
 const Our_products = () => {
+    console.log("products data=>",productsData)
     return(
         <div className="component-4">
             <div className="products">
@@ -10,19 +11,23 @@ const Our_products = () => {
                 </div>
                     <div className="product-gallery">
                         <div className="product-gallery-row">
-                            <div className="product-item">
-                                <div className="product-image" id="burger1"></div>
+                           {productsData.map((item, index)=>{
+                            return (
+                                <div className="product-item">
+                                <div className="product-image" id={item.imageid}></div>
                                 <div className="product-down-part">
-                                    <h3>Burger</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                    <h3>{item.name}</h3>
+                                    <p>{item.description}</p>
                                     <div className="order-details">
-                                        <h3 className="product-price">$ 4.9</h3>
+                                        <h3 className="product-price">$ {item.price}</h3>
                                         <button className="order-now-button"><span><i class="fa-solid fa-cart-shopping"></i></span>Order Now</button>
                                     </div>
                                 </div>
                             </div>
+                            )
+                           }) }
 
-                            <div className="product-item">
+                            {/* <div className="product-item">
                                 <div className="product-image" id="samosa2"></div>
                                 <div className="product-down-part">
                                     <h3>Samosa</h3>
@@ -104,7 +109,7 @@ const Our_products = () => {
                                         <button className="order-now-button"><span><i class="fa-solid fa-cart-shopping"></i></span>Order Now</button>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
             </div>
