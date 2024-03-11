@@ -252,6 +252,7 @@
     .foot-panel2{
         display: block;
         height: auto;
+        margin-left: 30%;
     }
 }
 
@@ -308,6 +309,12 @@ ul a{
 
     }
 }
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .last{
+        display: block;
+    }
+}
 .last1{
     height: 50px;
     width: 500px;
@@ -327,7 +334,8 @@ ul a{
 @media only screen and (min-width: 415px) and (max-width: 1050px)
 {
     .last1{
-        margin-right: 5%;
+        margin-right: 50%;
+        text-align: center;
     }
 }
 .last2{
@@ -351,7 +359,9 @@ ul a{
 @media only screen and (min-width: 415px) and (max-width: 1050px)
 {
     .last2{
-        width: 80%;
+        width: 90%;
+        margin-top: -10px;
+        
     }
 }
 .last1 i{
