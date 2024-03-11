@@ -17,6 +17,13 @@
     }
 }
 
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .footer{
+        height: auto;
+        
+    }
+} 
 .fresh{
     /*border: 2px solid black;*/
     height: 190px;
@@ -33,6 +40,14 @@
 
     }
 }
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .fresh{
+        display: block;
+        height: 400px;
+        width: 100%;
+    }
+} 
 .eatables-footer-logo h1{
     font-size: 40px;
     color: #81C408;
@@ -51,6 +66,14 @@
 
     }
 }
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .eatables-footer-logo h1
+    {
+        margin-left: -80%;
+        font-size: 50px;
+    }
+} 
 
 .search-bar-footer{
     padding-top: 40px;
@@ -71,6 +94,15 @@
         padding-right: 8%;
     }
 }
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .search-bar-footer
+    {
+        width: 90%;
+        padding-left: 8%;
+        padding-right: 8%;        
+    }
+} 
 .search-bar-input-box-footer{
     flex: 1;
     padding: 20px;
@@ -81,6 +113,12 @@
     /*border: 2px solid #81C408;*/
     border-radius: 30px;
     border: none;
+}
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .search-bar-input-box-footer{
+        height: 55px;
+    }
 }
 
 .search-button-footer{
@@ -104,6 +142,13 @@
 
     }
 }
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .search-button-footer{
+        height: 55px;
+        font-size: 20px;
+    }
+}
 
 .search-button-footer:hover{
     background-color: #FFB524;
@@ -124,6 +169,13 @@
         margin-left: 200px;
         margin-top: 50px;
 
+    }
+}
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .social-media-icons-footer{
+        margin-top: 20px;
+        float: right;
     }
 }
 .fa-twitter{
@@ -194,6 +246,15 @@
         display: block;
     }
 }
+
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .foot-panel2{
+        display: block;
+        height: auto;
+    }
+}
+
 ul{
     margin-top: 20px;
 }
@@ -247,7 +308,6 @@ ul a{
 
     }
 }
-
 .last1{
     height: 50px;
     width: 500px;
@@ -262,6 +322,12 @@ ul a{
 {
     .last1{
         font-size: 16px;
+    }
+}
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .last1{
+        margin-right: 5%;
     }
 }
 .last2{
@@ -281,9 +347,18 @@ ul a{
 
     }
 }
+
+@media only screen and (min-width: 415px) and (max-width: 1050px)
+{
+    .last2{
+        width: 80%;
+    }
+}
 .last1 i{
     color: white;
 }
+
+
 
 
 
