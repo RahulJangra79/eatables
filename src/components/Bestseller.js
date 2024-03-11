@@ -1,5 +1,5 @@
 import React from "react";
-import "./Products.css";
+import "./Bestseller.css";
 import { bestsellerData } from "./data/BestsellerData";
 import { bestsellerData_second } from "./data/BestsellerData";
 
