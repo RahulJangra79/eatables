@@ -1,14 +1,14 @@
 import React from "react";
 import "./testimonial.css"
-
+import { testimonialData } from "./data/ReviewData";
 const Testimonial = () =>{
     return(
         <div className="component10">
             <div className="test">
-            <h2>Our Testimonial</h2>
+                <h2>Our Testimonial</h2>
             </div>
             <div className="test1">
-            <h1>Our Client Saying!</h1>
+                <h1>Our Client Saying!</h1>
             </div>
             <div className="test2">
             <div className="btn1">
@@ -19,13 +19,14 @@ const Testimonial = () =>{
             </div>
             </div>
             <div className="client">
-                <div className="client1">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's
-                 standard dummy text ever since the 1500s,
-                 <hr />
-                 <div className="pick1">
-                    <div className="pick1">
-                        <h3>Client Name</h3>
-                        <p className="reviews-profession">Profession</p>
+                {testimonialData.map((item, index) => {
+                    return(
+                        <div className="client1">{item.description}
+                 <hr/>
+                 <div className={item.imageclass}>
+                    <div className={item.imageclass}>
+                        <h3>{item.name}</h3>
+                        <p className="reviews-profession">{item.profession}</p>
                         <p>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -36,32 +37,9 @@ const Testimonial = () =>{
                         <div className="icon"><i class="fa-solid fa-quote-right"></i></div>
                     </div>
                 </div>
-                
-            </div>
-            
-                
-
-
-
-
-                <div className="client2">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's
-                 standard dummy text ever since the 1500s,
-                 <hr />
-                 <div className="pick1">
-                    <div className="pick1">
-                        <h3>Client Name</h3>
-                        <p className="reviews-profession">Profession</p>
-                        <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        </p>
-                        <div className="icon1"><i class="fa-solid fa-quote-right"></i></div>
-                    </div>
                 </div>
-                </div>
+                    )
+                })}
             </div>
         </div>
         
