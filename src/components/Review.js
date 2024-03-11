@@ -1,26 +1,19 @@
 import React from "react";
 import "./review.css"
+import { reviewData } from "./data/ReviewData";
 
 const Review = () =>{
     return(
         <div className="component9">
             <div className="custmer1">
-                <div className="custmer2"><i class="fa-solid fa-users"></i>
-                <h2 className="custmer3">SATISFIED CUSTOMERS</h2>
-                <h1>1963</h1>
-                </div>
-                <div className="custmer2"><i class="fa-solid fa-users"></i>
-                <h2 className="custmer3">QUALITY OF SERVICE</h2>
-                <h1>99%</h1>
-                </div>
-                <div className="custmer2"><i class="fa-solid fa-users"></i>
-                <h2 className="custmer3">QUALITY CERTIFICATES</h2>
-                <h1>33</h1>
-                </div>
-                <div className="custmer2"><i class="fa-solid fa-users"></i>
-                <h2 className="custmer3">AVAILABLE PRODUCTS</h2>
-                <h1>789</h1>
-                </div>
+                {reviewData.map((item, index) =>{
+                    return(
+                        <div className="custmer2"><i class="fa-solid fa-users"></i>
+                            <h2 className="custmer3">{item.name}</h2>
+                            <h1>{item.year}</h1>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )
