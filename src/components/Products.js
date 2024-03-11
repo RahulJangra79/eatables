@@ -1,5 +1,7 @@
 import React from "react";
 import "./Products.css";
+import { bestsellerData } from "./data/BestsellerData";
+import { bestsellerData_second } from "./data/BestsellerData";
 
 const Products = () => {
     return(
@@ -11,67 +13,37 @@ const Products = () => {
 
             <div className="bestseller-products-items">
                 <div className="bestseller-products-items-1">
-                    <div className="bestseller-border">
-                        <div className="kachori-photo"></div>
-                        <div className="same"> 
-                            <div className="product-rating-name">Kachori</div>
-                            <div className="product-rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            <div className="product-rating-price">4.79 $</div>
-                            <button className="product-rating-buy-now-btn"><i class="fa-solid fa-cart-shopping"></i>Order Now</button>
-                        </div>
-                    </div>
-                    <div className="bestseller-border">
-                        <div className="fries-photo"></div>
-                        <div className="same"> 
-                            <div className="product-rating-name">French Fries</div>
-                            <div className="product-rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            <div className="product-rating-price">5.99 $</div>
-                            <button className="product-rating-buy-now-btn"><i class="fa-solid fa-cart-shopping"></i>Order Now</button>
-                        </div>
-                    </div>
-                    <div className="bestseller-border">
-                        <div className="manchurian-photo"></div>
-                        <div className="same">
-                            <div className="product-rating-name">Manchurian</div>
-                            <div className="product-rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            <div className="product-rating-price">7.89 $</div>
-                            <button className="product-rating-buy-now-btn"><i class="fa-solid fa-cart-shopping"></i>Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div className="bestseller-products-items-2">
-                    <div className="bestseller-border">
-                        <div className="noodles-photo"></div>
-                        <div className="same">
-                            <div className="product-rating-name">Noodles</div>
-                            <div className="product-rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            <div className="product-rating-price">5.89 $</div>
-                            <button className="product-rating-buy-now-btn"><i class="fa-solid fa-cart-shopping"></i>Order Now</button>
-                        </div>
-                    </div>
-                    <div className="bestseller-border">
-                        <div className="springroll-photo"></div>
-                        <div className="same">
-                            <div className="product-rating-name">SpringRoll</div>
-                            <div className="product-rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            <div className="product-rating-price">6.99 $</div>
-                            <button className="product-rating-buy-now-btn"><i class="fa-solid fa-cart-shopping"></i>Order Now</button>
-                        </div>
-                    </div>
-                    <div className="bestseller-border">
-                        <div className="dahi-golgappe-photo"></div>
-                        <div className="same">
-                            <div className="product-rating-name">Dahi Golgappe</div>
-                            <div className="product-rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            <div className="product-rating-price">5.15 $</div>
-                            <button className="product-rating-buy-now-btn"><i class="fa-solid fa-cart-shopping"></i>Order Now</button>
-                        </div>
-                    </div>
+                        {bestsellerData.map((item, index)=>{
+                            return (
+                                <div className="bestseller-border">
+                                    <div className={item.imageclass}></div>
+                                    <div className="same"> 
+                                        <div className="product-rating-name">{item.name}</div>
+                                        <div className="product-rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                        <div className="product-rating-price">{item.price}</div>
+                                        <button className="product-rating-buy-now-btn"><i class="fa-solid fa-cart-shopping"></i>Order Now</button>
+                                    </div>
+                                </div>
+                            )
+                        })}
                 </div>
             </div>
 
             <div className="bestseller-second-component">
-                <div className="bestseller-second-component-items">
+                {bestsellerData_second.map((item, index) =>{
+                    return(
+                        <div className="bestseller-second-component-items">
+                            <div className={item.imageclass}></div>
+                            <div className="bestseller-second-component-image1-des">
+                                <div className="bestseller-second-component-image1-des-name">{item.name}</div>
+                                <div className="bestseller-second-component-image1-des-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <div className="bestseller-second-component-image1-des-price">{item.price}</div>
+                                <div className="bestseller-second-component-image1-des-buy-btn"><i class="fa-solid fa-cart-shopping"></i>Order Now</div>
+                            </div>
+                        </div>
+                    )
+                })}
+                {/* <div className="bestseller-second-component-items">
                     <div className="bestseller-second-component-image1"></div>
                     <div className="bestseller-second-component-image1-des">
                         <div className="bestseller-second-component-image1-des-name">Pizza</div>
@@ -106,7 +78,7 @@ const Products = () => {
                         <div className="bestseller-second-component-image1-des-price">6.89 $</div>
                         <div className="bestseller-second-component-image1-des-buy-btn"><i class="fa-solid fa-cart-shopping"></i>Order Now</div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </div>
