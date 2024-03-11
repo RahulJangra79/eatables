@@ -7,7 +7,7 @@ import Our_products from './components/Our_products';
 import Component5 from './components/Component5';
 import Component6 from './components/Component6';
 import Store from './components/Store';
-import Products from './components/Products';
+import Products from './components/Bestseller';
 import Review from './components/Review';
 import Testimonial from './components/Testimonial';
 import Footer from './components/Footer';
