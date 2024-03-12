@@ -39,15 +39,15 @@
     font-size: 1rem;
     align-items: center;
 
-    @media only screen and (max-width:415px)
+    @media only screen and (max-width:970px)
     {
         display: none;
     }
     
-    @media only screen and (min-width:415px) and (max-width:970px)
+    /* @media only screen and (min-width:415px) and (max-width:970px)
     {
         display: none;
-    }
+    } */
 }
 .navbar1-left-side {
     display: flex;
