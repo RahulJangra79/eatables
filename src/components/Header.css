@@ -41,7 +41,7 @@
 
     @media only screen and (max-width:970px)
     {
-        display: none;
+        display: none !important;
     }
     
     /* @media only screen and (min-width:415px) and (max-width:970px)
