@@ -5,7 +5,7 @@ const Header = () => {
   return(
         <div>
             <div className="navbar">
-                <div className="navbar1">
+                <div className="navbar1 d-sm-none d-md-none d-lg-flex">
                     <div className="navbar1-left-side">
                         <p><i class="fas fa-map-marker-alt me-1 text-orange"></i> <a href="#" class="text-white">123 Street, New York</a></p>
                         <p><i class="fas fa-envelope me-2 text-orange"></i><a href="#" class="text-white">Email@Example.com</a></p>
