@@ -82,7 +82,6 @@
 #fry-momos-33{
     background-image: url("/src/Images/fry-momos.jpg");
 }
-
 .bigger-product-solid-color-orange{
     background-color: rgb(231, 126, 14);
     height: 131px;
@@ -97,7 +96,7 @@
 }
 .bigger-product-solid-color-yellow{
     background-color: rgb(236, 184, 14);
-    height: 131px;
+    height: 131px; 
     width: 100%;
     border-radius: 0 0 10px 10px;
 }

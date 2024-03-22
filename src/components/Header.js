@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css"
+import { Link } from "react-router-dom"
 
 const Header = () => {
+
+    const [isButtonClosed, setIsButtonClosed] = useState(false);
+
+    const navBarHook = () => {
+        setIsButtonClosed(!isButtonClosed)
+    }
+
+
   return(
         <div>
             <div className="navbar">
@@ -24,16 +33,16 @@ const Header = () => {
                     <div className="nav-menu">
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <Link class="nav-link" to="/">Home</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shop</a>
+                                <Link class="nav-link" to="our_products">Shop</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shop Detail</a>
+                                <Link class="nav-link" to="bestseller">Shop Detail</Link>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                                <Link class="nav-link dropdown-toggle" data-bs-toggle="dropdown" to="/" role="button" aria-expanded="false">Pages</Link>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -42,13 +51,17 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <Link class="nav-link" to="footer">Contact</Link>
                             </li>
                         </ul>
                     </div>
+
+
                     <div className="three-arrow-icon">
-                        <i class="fa-solid fa-bars"></i>
+                        <i className={`fa-solid ${isButtonClosed ?  "fa-xmark navbar-hook" : "fa-bars" }`} onClick={navBarHook}></i>
                     </div>
+
+
                     <div className="nav-icons">
                         <div className="search-magnifying-glass">
                             <i class="fa-solid fa-magnifying-glass"></i>

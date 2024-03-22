@@ -1,5 +1,7 @@
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
 
 .navbar
 {
@@ -21,9 +23,9 @@
 
     @media only screen and (max-width:415px)
     {
-            width: 100%;
-            height: 100px;
-            margin: 0;
+        width: 100%;
+        height: 100px;
+        margin: 0;  
     }
 }
 .navbar1 
@@ -189,14 +191,14 @@
     }
 }
 .nav-icons i{
-    margin: 14px;
+    margin: 14px;;
 }
 .nav-icons i:hover{
     color: #651d3b;
 }
 .fa-user{
     font-size: 2rem;
-    color: #a22458;
+    color: #a22458; 
 }
 .fa-bag-shopping{
     font-size: 2rem;
@@ -204,15 +206,13 @@
 }
 /* .cart-shopping-bag span{
     height: 20px;
-    width: 20px;
+    widyth: 20px;
     position: absolute;
     border-radius: 50%;
     background-color: #ffb524;
     align-items: center;
-    justify-content: center;
+    justif-content: center;
     color: #747D88;
-
-
 } */
 .fa-magnifying-glass{
     font-size: 1rem;
