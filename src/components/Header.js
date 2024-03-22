@@ -42,15 +42,6 @@ const Header = () => {
                             <li class="nav-item">
                                 <Link class="nav-link" to="bestseller">Shop Detail</Link>
                             </li>
-                            <li class="nav-item dropdown">
-                                <Link class="nav-link dropdown-toggle" data-bs-toggle="dropdown" to="/" role="button" aria-expanded="false">Pages</Link>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                </ul>
-                            </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to="footer">Contact</Link>
                             </li>
