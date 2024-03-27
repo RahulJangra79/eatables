@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Hero from '../components/Hero'
 import Service_card from '../components/Service_cards'
 import Our_products from '../components/Our_products'
@@ -8,11 +8,13 @@ import Store from '../components/Store'
 import Products from '../components/Bestseller'
 import Review from '../components/Review'
 import Testimonial from '../components/Testimonial'
+import { heroData } from '../components/data/HeroData'
 
 export const Home = () => {
+  
   return (
     <div>
-        <Hero />
+        <Hero data={heroData} />
         <Service_card />
         <Our_products />
         <Component5 />
