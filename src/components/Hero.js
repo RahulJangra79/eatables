@@ -2,16 +2,18 @@ import React from "react";
 import "./Hero.css"
 import 'bootstrap/dist/css/bootstrap.css'; 
 
-const Hero = () => {
+const Hero = (props) => {
+    console.log("Props=>", props)
+    const {title, des, buttonTitle} = props.data;
     return(
         <div className="hero-main">
             <div className="hero-sections">
                 <div className="heading-and-search">
-                    <div className="delicious-taste">100% Original Taste</div>
-                    <h1 className="best-chinese-italian">Best Chinese & Italian Food</h1>
+                    <div className="delicious-taste">{title}</div>
+                    <h1 className="best-chinese-italian">{des}</h1>
                     <div class="row">
                         <input className="input-box" type="text" placeholder="Search"></input>
-                        <button className="search-button-hero">Search</button>
+                        <button className="search-button-hero">{buttonTitle}</button>
                     </div>
                 </div>
                 <div className="carousel">

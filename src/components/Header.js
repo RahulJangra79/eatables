@@ -7,10 +7,21 @@ const Header = () => {
 
     const [isButtonClosed, setIsButtonClosed] = useState(false);
 
+    const [isHamburgershow, setIsHamburgershow] = useState(false);
+
     const navBarHook = () => {
         setIsButtonClosed(!isButtonClosed)
-    }
+    };
 
+    const hamburgerChange = () => {
+        if (isHamburgershow !== "nav-menu") setIsHamburgershow("nav");
+        else setIsHamburgershow("nav-menu");
+    };
+
+    const hamburgerFunction = () => {
+        setIsButtonClosed(!isButtonClosed);
+        setIsHamburgershow(!isHamburgershow);
+    }
 
   return(
         <div>
@@ -31,26 +42,28 @@ const Header = () => {
                     <div className="eatables-h1">
                         <h1>Eatables</h1>
                     </div>
-                    <div className="nav-menu">
+
+                    <div className={` ${isHamburgershow ? "nav" : "nav-menu" }`}>
+
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
-                                <Link class="nav-link" to="/">Home</Link>
+                                <Link className="nav-link" to="/">Home</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="our_products">Shop</Link>
+                                <Link className="nav-link" to="our_products">Shop</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="bestseller">Shop Detail</Link>
+                                <Link className="nav-link" to="bestseller">Shop Detail</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link" to="footer">Contact</Link>
+                                <Link className="nav-link" to="footer">Contact</Link>
                             </li>
                         </ul>
                     </div>
 
 
                     <div className="three-arrow-icon">
-                        <i className={`fa-solid ${isButtonClosed ?  "fa-xmark navbar-hook" : "fa-bars" }`} onClick={navBarHook}></i>
+                        <i className={`fa-solid ${isButtonClosed ?  "fa-xmark" : "fa-bars"}`} onClick={hamburgerFunction}></i>
                     </div>
 
 
