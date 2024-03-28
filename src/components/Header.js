@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css"
+import { Link } from "react-router-dom"
 
 const Header = () => {
+
+
+    const [isButtonClosed, setIsButtonClosed] = useState(false);
+
+    const [isHamburgershow, setIsHamburgershow] = useState(false);
+
+    const navBarHook = () => {
+        setIsButtonClosed(!isButtonClosed)
+    };
+
+    const hamburgerChange = () => {
+        if (isHamburgershow !== "nav-menu") setIsHamburgershow("nav");
+        else setIsHamburgershow("nav-menu");
+    };
+
+    const hamburgerFunction = () => {
+        setIsButtonClosed(!isButtonClosed);
+        setIsHamburgershow(!isHamburgershow);
+    }
+
   return(
         <div>
             <div className="navbar">
-                <div className="navbar1">
+                <div className="navbar1 d-sm-none d-md-none d-lg-flex">
                     <div className="navbar1-left-side">
                         <p><i class="fas fa-map-marker-alt me-1 text-orange"></i> <a href="#" class="text-white">123 Street, New York</a></p>
                         <p><i class="fas fa-envelope me-2 text-orange"></i><a href="#" class="text-white">Email@Example.com</a></p>
@@ -21,34 +42,31 @@ const Header = () => {
                     <div className="eatables-h1">
                         <h1>Eatables</h1>
                     </div>
-                    <div className="nav-menu">
+
+                    <div className={` ${isHamburgershow ? "nav" : "nav-menu" }`}>
+
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <Link className="nav-link" to="/">Home</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shop</a>
+                                <Link className="nav-link" to="our_products">Shop</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shop Detail</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                </ul>
+                                <Link className="nav-link" to="bestseller">Shop Detail</Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <Link className="nav-link" to="footer">Contact</Link>
                             </li>
                         </ul>
                     </div>
+
+
                     <div className="three-arrow-icon">
-                        <i class="fa-solid fa-bars"></i>
+                        <i className={`fa-solid ${isButtonClosed ?  "fa-xmark" : "fa-bars"}`} onClick={hamburgerFunction}></i>
                     </div>
+
+
                     <div className="nav-icons">
                         <div className="search-magnifying-glass">
                             <i class="fa-solid fa-magnifying-glass"></i>
