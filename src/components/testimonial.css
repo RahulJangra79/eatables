@@ -34,8 +34,8 @@
     width: 100%;
     margin-top: -30px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    /* flex-direction: row; */
+    justify-content: right;
     padding: 10px;
 }
 @media only screen and (max-width: 415px)
@@ -50,7 +50,8 @@
     height: 35px;
     width: 75px;
     border-radius: 20px;
-    margin-left: 1200px;
+    /* margin-left: 1200px; */
+    margin-right: 20px;
     line-height: 30px;
 }
 
@@ -75,6 +76,11 @@
     border-radius: 20px;
     margin-right: 150px;
     line-height: 30px;
+
+    @media only screen and (max-width: 415px)
+    {
+        margin-right: 20px;
+    }
 }
 
 @media only screen and (max-width: 415px)
@@ -148,7 +154,9 @@
 @media only screen and (max-width: 415px)
 {
     .client1{
+        height: 250px;
         width: 100%;
+        margin-bottom: 20px;
         
     }
 }

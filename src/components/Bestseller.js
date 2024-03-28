@@ -39,7 +39,8 @@ const Products = () => {
       </div>
 
       <div className="bestseller-second-component">
-        {bestsellerData_second.map((item, index) => {
+        {bestsellerData_second.map((item, index) => 
+        {
           return (
             <div className="bestseller-second-component-items">
               <div className={item.imageclass}></div>

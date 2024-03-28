@@ -296,23 +296,23 @@ ul a{
 }
 .last{
     height: 100px;
-    /*border: 2px solid black;*/
     text-align: left;
     display: flex;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 150px 0 50px;
 }
 @media only screen and (max-width: 415px)
 {
     .last{
-        margin-top: 900px;
-        display: block;
+        margin: 900px 0 0 0;
 
     }
 }
 @media only screen and (min-width: 415px) and (max-width: 1050px)
 {
     .last{
-        display: block;
+        /* display: block; */
     }
 }
 .last1{
