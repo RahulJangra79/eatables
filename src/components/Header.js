@@ -9,14 +9,18 @@ const Header = () => {
 
     const [isHamburgershow, setIsHamburgershow] = useState(false);
 
-    const navBarHook = () => {
-        setIsButtonClosed(!isButtonClosed)
-    };
+    // const navBarHook = () => {
+    //     setIsButtonClosed(!isButtonClosed)
+    // };
 
-    const hamburgerChange = () => {
-        if (isHamburgershow !== "nav-menu") setIsHamburgershow("nav");
-        else setIsHamburgershow("nav-menu");
-    };
+    // const hamburgerChange = () => {
+    //     if (isHamburgershow !== "nav-menu") setIsHamburgershow("nav");
+    //     else setIsHamburgershow("nav-menu");
+    // };
+    
+    const changehamburger = () => {
+        setIsHamburgershow(!isHamburgershow);
+    }
 
     const hamburgerFunction = () => {
         setIsButtonClosed(!isButtonClosed);
@@ -47,16 +51,16 @@ const Header = () => {
 
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
-                                <Link className="nav-link" to="/">Home</Link>
+                                <Link className="nav-link" to="/" onClick={changehamburger}>Home</Link>
                             </li>
                             <li class="nav-item">
-                                <Link className="nav-link" to="our_products">Shop</Link>
+                                <Link className="nav-link" to="our_products" onClick={changehamburger}>Shop</Link>
                             </li>
                             <li class="nav-item">
-                                <Link className="nav-link" to="bestseller">Shop Detail</Link>
+                                <Link className="nav-link" to="bestseller" onClick={changehamburger}>Shop Detail</Link>
                             </li>
                             <li class="nav-item">
-                                <Link className="nav-link" to="footer">Contact</Link>
+                                <Link className="nav-link" to="footer" onClick={changehamburger}>Contact</Link>
                             </li>
                         </ul>
                     </div>
