@@ -11,10 +11,10 @@ import Testimonial from '../components/Testimonial'
 import { heroData } from '../components/data/HeroData'
 
 export const Home = () => {
-  
+
   return (
     <div>
-        <Hero data={heroData} />
+        <Hero data={heroData}/>
         <Service_card />
         <Our_products />
         <Component5 />
