@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css"
 import { Link } from "react-router-dom"
+import Cart from "./Cart";
 
 const Header = () => {
 
@@ -8,6 +9,7 @@ const Header = () => {
 
     const [isHamburgershow, setIsHamburgershow] = useState(false);
     
+
     const changehamburger = () => {
         setIsHamburgershow(!isHamburgershow);
     }
