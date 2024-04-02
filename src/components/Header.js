@@ -5,10 +5,10 @@ import Cart from "./Cart";
 
 const Header = () => {
 
-
     const [isButtonClosed, setIsButtonClosed] = useState(false);
 
     const [isHamburgershow, setIsHamburgershow] = useState(false);
+    
 
     const changehamburger = () => {
         setIsHamburgershow(!isHamburgershow);

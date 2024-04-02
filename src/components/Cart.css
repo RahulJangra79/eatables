@@ -94,15 +94,16 @@
     color: black;
     font-size: 20px;
     font-weight: 500;
+    margin-right: 70px;
 }
 
 .coupon{
     background-color: white;
-    margin-left: 70px;
     border: 2px solid orange;
     border-radius: 30px;
     height: 60px;
-    width: 200px;
+    width: auto;
+    padding: 0 20px;
     color: rgb(39, 162, 39);
     font-size: 20px;
     font-weight: 500;
@@ -114,9 +115,49 @@
 }
 
 .cart-section-4{
+    padding: 20px;
+    text-align: left;
     background-color: #f3f3f3;
-    height: 500px;
-    width: 30%;
-    margin-top: 200px;
-    margin-left: 60%;
+    height: auto;
+    width: 27%;
+    margin: 200px 11% 150px auto;
+    border-radius: 10px;
+}
+
+.cart-total{
+    font-size: 45px;
+    color: #45595B;
+}
+.cart-total-font-weight{
+    font-weight: 700;
+}
+
+.cart-total-2{
+    margin: 20px 0;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.total-border{
+    padding: 20px 0;
+    border-top: 1px solid rgb(222, 222, 222);
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+.subtotal-price{
+    font-size: 20px;
+   text-align: right;
+   color: #929697;
+}
+.shipping-price{
+    font-size: 20px;
+    text-align: right;
+    color: #929697;
+}
+.line-space{
+    line-height: 0px;
+}
+.total-price{
+    font-size: 20px;
+    text-align: right;
+    color: #929697;
 }

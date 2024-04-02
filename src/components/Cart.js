@@ -42,7 +42,25 @@ const Cart = () => {
             </div>
 
             <div className="cart-section-4">
-                    
+                    <h1 className="cart-total"><span className="cart-total-font-weight">Cart</span> Total</h1>
+                   <div className="cart-total-2">
+                        <div className="subtotal">Subtotal</div>
+                        <div className="subtotal-price">$ 8.99</div>
+                   </div>
+                   <div className="cart-total-2">
+                        <div className="shipping">Shipping</div>
+                        <div className="shipping-price">
+                            <p> Flat rate: $3.00</p>
+                            <p className="line-space"> Shipping to Ukraine.</p>
+                        </div>
+                   </div>
+                   <div className="cart-total-2 total-border">
+                        <div className="total">Total</div>
+                        <div className="total-price">$ 9.99</div>
+                   </div>
+                   <div>
+                        <button className="coupon">PROCEED CHECKOUT</button>
+                    </div>
             </div>
         </>
     )
