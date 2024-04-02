@@ -1,0 +1,163 @@
+.cart-image{
+    background-image: url("/src/Images/background-banner-safeimagekit.jpeg");
+    height: 150px;
+    width: 100%;
+    background-color: rgba(83, 46, 35, 0.507);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cart-image-heading{
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 48%;
+}
+
+.cart-section-2{
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+}
+.qty-no{
+    padding: 0 10px;
+}
+.cart-title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #747D88;
+    font-weight: 500;
+    border-bottom: 3px solid black;
+    margin: 0 11%;
+    padding-bottom: 10px;
+}
+
+.cart-items-img-1{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    /* width: 100%; */
+    margin-top: 10px;
+    color: #747D88;
+    font-size: 20px;
+    align-items: center;
+    margin: 0 11%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.imageee-1{
+    background-image: url("/src/Images/pizza.jpg");
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.cross-icon{
+    border-radius: 50%;
+    color: rgb(201, 14, 14);
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+
+.plus{
+    border-radius: 50%;
+    color: rgb(76, 63, 91);
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+
+.line-below{
+    border-bottom: 5px;
+    color: rgb(29, 25, 45);
+}
+
+.cart-section-3{
+    margin-top: 80px;
+    margin-left: 11%;
+    float: left;
+}
+
+.input-field{
+    border: hidden;
+    border-bottom: 3px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    height: 60px;
+    width: 200px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 70px;
+}
+
+.coupon{
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 30px;
+    height: 60px;
+    width: auto;
+    padding: 0 20px;
+    color: rgb(39, 162, 39);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.coupon:hover{
+    background-color: orange;
+    color: white;
+}
+
+.cart-section-4{
+    padding: 20px;
+    text-align: left;
+    background-color: #f3f3f3;
+    height: auto;
+    width: 27%;
+    margin: 200px 11% 150px auto;
+    border-radius: 10px;
+}
+
+.cart-total{
+    font-size: 45px;
+    color: #45595B;
+}
+.cart-total-font-weight{
+    font-weight: 700;
+}
+
+.cart-total-2{
+    margin: 20px 0;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.total-border{
+    padding: 20px 0;
+    border-top: 1px solid rgb(222, 222, 222);
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+.subtotal-price{
+    font-size: 20px;
+   text-align: right;
+   color: #929697;
+}
+.shipping-price{
+    font-size: 20px;
+    text-align: right;
+    color: #929697;
+}
+.line-space{
+    line-height: 0px;
+}
+.total-price{
+    font-size: 20px;
+    text-align: right;
+    color: #929697;
+}

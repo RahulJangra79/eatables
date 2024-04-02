@@ -4,19 +4,9 @@ import { Link } from "react-router-dom"
 
 const Header = () => {
 
-
     const [isButtonClosed, setIsButtonClosed] = useState(false);
 
     const [isHamburgershow, setIsHamburgershow] = useState(false);
-
-    // const navBarHook = () => {
-    //     setIsButtonClosed(!isButtonClosed)
-    // };
-
-    // const hamburgerChange = () => {
-    //     if (isHamburgershow !== "nav-menu") setIsHamburgershow("nav");
-    //     else setIsHamburgershow("nav-menu");
-    // };
     
     const changehamburger = () => {
         setIsHamburgershow(!isHamburgershow);
@@ -76,8 +66,10 @@ const Header = () => {
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div className="cart-shopping-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            {/* <span className="cart-value">3</span> */}
+                            <Link to="cart">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                {/* <span className="cart-value">3</span> */}
+                            </Link>
                         </div>
                         <div className="user-profile">
                             <i class="fa-solid fa-user"></i>
