@@ -133,31 +133,6 @@
     background-repeat: no-repeat;
 }
 
-/* .bestseller-products-items-2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 25px; 
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-@media only screen and (max-width:415px)
-{
-    .bestseller-products-items-2{
-        display: block;
-        padding: 20px;
-        margin-top: -40px;
-    }
-}
-
-@media only screen and (min-width:415px) and (max-width:860px)
-{
-    .bestseller-products-items-2{
-        display: block;
-    }
-} */
-
 .noodles-photo{
     background-image: url('/src/Images/noodles.jpg');
     height: 150px;
@@ -321,7 +296,7 @@
     .bestseller-second-component-image1{
         background-image: url('/src/Images/pizza.jpg');
         height: 250px;
-        width: 350px;
+        width: 300px;
         background-size: 350px 250px;
     }
 }
@@ -350,7 +325,7 @@
     .bestseller-second-component-image2{
         background-image: url('/src/Images/steam-momos.jpg');
         height: 250px;
-        width: 350px;
+        width: 300px;
         background-size: 350px 250px;
     }
 }
@@ -379,7 +354,7 @@
     .bestseller-second-component-image3{
         background-image: url('/src/Images/pani-golgappe.jpg');
         height: 250px;
-        width: 350px;
+        width: 300px;
         background-size: 350px 250px;
     }
 }
@@ -408,7 +383,7 @@
     .bestseller-second-component-image4{
         background-image: url('/src/Images/samosa.jpg');
         height: 250px;
-        width: 350px;
+        width: 300px;
         background-size: 350px 250px;
     }
 }
