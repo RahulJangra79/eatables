@@ -14,8 +14,10 @@
     position: absolute;
     z-index: 1;
     top: 40px;
-    left: 45%;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 .outer-box-contact{
     margin: 100px 10% 150px 10%;
     height: auto;
