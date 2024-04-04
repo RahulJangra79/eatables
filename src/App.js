@@ -8,6 +8,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import Cart from './components/Cart';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
           <Route
             path="/Cart"
             element={<Cart/>}
+          ></Route>
+          <Route
+            path="/Contact"
+            element={<Contact/>}
           ></Route>
           <Route
             path="/Our_products"
