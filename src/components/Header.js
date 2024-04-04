@@ -52,7 +52,7 @@ const Header = () => {
                                 <Link className="nav-link" to="bestseller" onClick={changehamburger}>Shop Detail</Link>
                             </li>
                             <li class="nav-item">
-                                <Link className="nav-link" to="footer" onClick={changehamburger}>Contact</Link>
+                                <Link className="nav-link" to="contact" onClick={changehamburger}>Contact</Link>
                             </li>
                         </ul>
                     </div>
