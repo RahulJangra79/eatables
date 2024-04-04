@@ -8,13 +8,15 @@
 }
 
 .cart-image-heading{
+    
     align-items: center;
     color: white;
     font-weight: 700;
     position: absolute;
     z-index: 1;
-    top: 40px;
-    left: 48%;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .cart-section-2{
