@@ -51,14 +51,13 @@ const Cart = () => {
                         <div className="shipping">Shipping</div>
                         <div className="shipping-price">
                             <p> Flat rate: $3.00</p>
-                            <p className="line-space"> Shipping to Ukraine.</p>
                         </div>
                    </div>
                    <div className="cart-total-2 total-border">
                         <div className="total">Total</div>
                         <div className="total-price">$ 9.99</div>
                    </div>
-                   <div>
+                   <div className="proceed-checkout">
                         <button className="coupon">PROCEED CHECKOUT</button>
                     </div>
             </div>
