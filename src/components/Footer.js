@@ -24,7 +24,7 @@ const Footer = () =>{
 
 
 
-                <div class="foot-panel2">
+                <div className="foot-panel2">
                 <ul>
                     <p>Why People Like us!</p>
                     <a>typesetting, remaining</a> 
