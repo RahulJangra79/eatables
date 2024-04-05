@@ -21,38 +21,40 @@
 
 .cart-section-2{
     height: auto;
+    margin: 100px 10%;
+}
+.cart-table{
+
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    border-collapse: collapse;
+}
+.cart-table th{
+    padding: 8px 20px;
+    border-bottom: 2px solid #7d7d7d;
+}
+.cart-table-heading-first{
+    width: 100px;
+}
+.cart-table td {
+    padding: 8px 20px;
+    border-bottom: 1px solid #ddd;
+}
+.cart-table tbody tr:hover {
+    background-color: #efeeee;
+}
+@media (max-width: 800px) {
+    .cart-section-2 {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+
+    .cart-table th, .cart-table td {
+        white-space: nowrap; /* Prevent text wrapping */
+    }
 }
 .qty-no{
     padding: 0 10px;
 }
-.cart-title{
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    color: #747D88;
-    font-weight: 500;
-    border-bottom: 3px solid black;
-    margin: 0 11%;
-    padding-bottom: 10px;
-}
-
-.cart-items-img-1{
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    /* width: 100%; */
-    margin-top: 10px;
-    color: #747D88;
-    font-size: 20px;
-    align-items: center;
-    margin: 0 11%;
-    padding: 10px 0;
-    border-bottom: 1px solid rgb(222, 222, 222);
-}
-
 .imageee-1{
     background-image: url("/src/Images/pizza.jpg");
     height: 85px;
@@ -60,7 +62,6 @@
     border-radius: 50%;
     background-size: cover;
 }
-
 .cross-icon{
     border-radius: 50%;
     color: rgb(201, 14, 14);
@@ -68,18 +69,12 @@
     width: 40px;
     border: none;
 }
-
 .plus{
     border-radius: 50%;
-    color: rgb(76, 63, 91);
+    color: rgb(58, 58, 58);
     height: 40px;
     width: 40px;
     border: none;
-}
-
-.line-below{
-    border-bottom: 5px;
-    color: rgb(29, 25, 45);
 }
 
 .cart-section-3{

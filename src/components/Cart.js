@@ -11,29 +11,37 @@ const Cart = () => {
             </div>
 
             <div className="cart-section-2">
-                <div className="cart-title"> 
-                    <div>Products</div>
-                    <div>Name</div>
-                    <div>Price</div>
-                    <div>Quantity</div>
-                    <div>Total</div>
-                    <div>Handle</div>               
-                </div>
+                <table className="cart-table">
+                    <thead>
+                        <tr>
+                            <th className="cart-table-heading-first">Products</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th className="cart-table-heading-first">Handle</th>
+                        </tr>
+                    </thead>
 
-                <div className="cart-items-img">
+                    <tbody>
                         {CartData.map((item, index) => {
                             return(
-                                <div className="cart-items-img-1">
-                                    <div className={item.imageClass}></div>
-                                    <div className="product-name">{item.name}</div>
-                                    <div className="product-price">{item.price}</div>
-                                    <div className="plus-minus"><button className="plus"><i class="fa-solid fa-minus"></i></button><span className="qty-no">5</span><button className="plus"><i class="fa-solid fa-plus"></i></button></div>
-                                    <div className="product-total-price">{item.totalPrice}</div>
-                                    <button className="cross-icon"><i class="fa-solid fa-xmark"></i></button>
-                                </div>
+                                <tr>
+                                    <td><div className={item.imageClass}></div></td>
+                                    <td className="product-name">{item.name}</td>
+                                    <td className="product-price">{item.price}</td>
+                                    <td className="plus-minus">
+                                        <button className="plus"><i className="fa-solid fa-minus"></i></button>
+                                        <span className="qty-no">5</span>
+                                        <button className="plus"><i className="fa-solid fa-plus"></i></button>
+                                    </td>
+                                    <td className="product-total-price">{item.totalPrice}</td>
+                                    <td><button className="cross-icon"><i class="fa-solid fa-xmark"></i></button></td>
+                                </tr>
                             )
                         })}
-                </div>
+                    </tbody>
+                </table>
             </div>
 
             <div className="cart-section-3">
