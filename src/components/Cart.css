@@ -23,6 +23,7 @@
     height: auto;
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .qty-no{
     padding: 0 10px;
@@ -82,9 +83,13 @@
 }
 
 .cart-section-3{
-    margin-top: 80px;
-    margin-left: 11%;
-    float: left;
+    height: 100px;
+    margin: 0 10%;
+    text-align: left;
+
+    @media only screen and (max-width: 1100px){
+        text-align: center;
+    }
 }
 
 .input-field{
@@ -97,6 +102,10 @@
     font-size: 20px;
     font-weight: 500;
     margin-right: 70px;
+
+    @media only screen and (max-width: 600px){
+        margin-right: 0px;
+    }
 }
 
 .coupon{
@@ -123,8 +132,17 @@
     background-color: #f3f3f3;
     height: auto;
     width: 27%;
-    margin: 200px 11% 150px auto;
+    min-width: 400px;
+    margin: 100px 11% 150px auto;
     border-radius: 10px;
+
+    @media only screen and (max-width: 1100px){
+        margin: 50px auto;
+    }
+
+    @media only screen and (max-width: 500px){
+        min-width: 300px;
+    }
 }
 
 .cart-total{
@@ -156,11 +174,11 @@
     text-align: right;
     color: #929697;
 }
-.line-space{
-    line-height: 0px;
-}
 .total-price{
     font-size: 20px;
     text-align: right;
     color: #929697;
+}
+.proceed-checkout{
+    text-align: center;
 }
