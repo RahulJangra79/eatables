@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Our_products from './components/Our_products';
 import Products from './components/Bestseller';
-import Footer from './components/Footer';
+import Footer1 from './components/Footer1';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
@@ -37,7 +37,7 @@ function App() {
             element={<Products />}
           ></Route>
         </Routes>
-        <Footer />
+        <Footer1 />
       </BrowserRouter>
     </div>
   );

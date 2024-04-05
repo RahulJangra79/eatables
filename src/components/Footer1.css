@@ -1,0 +1,92 @@
+.footer{
+    height: auto;
+    width: 100%;
+    background-color: #a22458f0;
+   padding: 100px 8%;
+}
+
+.footer-section-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section-2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-heading{
+    font-size: 50px;
+    font-weight: 700;
+    color: orange;
+}
+
+.footer-searchbar{
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    width: 500px;
+    position: relative;
+}
+
+.search-bar-input-box-footer{
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Raleway;
+    width: 100%;
+    height: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.search-button-footer{
+    position: absolute;
+    height: 40px;
+    width: 25% !important;
+    border-radius: 30px;
+    background-color: orange;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    right: 0px;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-twitter,.fa-facebook-f,.fa-youtube,.fa-linkedin-in{
+    height: 50px;
+    width: 50px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 2;
+    margin-left: 20px;
+}
+
+.footer-section-2{
+    display: flex;
+    color: white;
+}
+
+.footer-section-2-first li h2{
+    margin-bottom: 30px;
+}
+
+.footer-section-2-first li a{
+    font-size: 22px;
+}
+
+.footer-section-2-first{
+   text-align: left;
+}
+.footer-section-2-first ul{
+    list-style: none;
+ }
