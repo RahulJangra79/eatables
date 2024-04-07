@@ -66,7 +66,15 @@ const Footer1 =() => {
                             <li><a>Payment Accepted</a></li>
                         </ul>
                     </div>
+                 </div>
 
+                 <div className="footer-section-3">
+                    <button>Read More</button>
+                 </div>
+
+                 <div className="footer-section-4">
+                    <div className="footer-end-1"><span>Eatables</span>,All Rights Reserved</div>
+                    <div className="footer-end-2">Designed By HTML Codex Distributed By ThemeWagon</div>
                  </div>
 
 

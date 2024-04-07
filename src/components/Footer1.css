@@ -8,12 +8,14 @@
 .footer-section-1{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-section-2{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-heading{
@@ -55,6 +57,10 @@
     right: 0px;
 }
 
+.search-button-footer:hover{
+    background-color: purple;
+}
+
 .footer-icons{
     display: flex;
     justify-content: space-between;
@@ -69,6 +75,23 @@
     font-size: 24px;
     line-height: 2;
     margin-left: 20px;
+}
+
+.fa-twitter:hover{
+    background-color: #a22458f0;
+    color: white;
+}
+.fa-facebook-f:hover{
+    background-color: #a22458f0;
+    color: white;
+}
+.fa-youtube:hover{
+    background-color: #a22458f0;
+    color: white;
+}
+.fa-linkedin-in:hover{
+    background-color: #a22458f0;
+    color: white;
 }
 
 .footer-section-2{
@@ -89,4 +112,29 @@
 }
 .footer-section-2-first ul{
     list-style: none;
+ }
+
+ .footer-section-3 button{
+    float: left;
+    height: 50px;
+    width: 150px;
+    background-color: #a22458f0;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+ }
+
+ .footer-section-3 button:hover{
+    background-color: purple;
+ }
+
+ .footer-section-4{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
  }
