@@ -1,23 +1,15 @@
 import React, { useState } from "react";
 import "./Header.css"
 import { Link } from "react-router-dom"
+import Cart from "./Cart";
 
 const Header = () => {
-
 
     const [isButtonClosed, setIsButtonClosed] = useState(false);
 
     const [isHamburgershow, setIsHamburgershow] = useState(false);
-
-    // const navBarHook = () => {
-    //     setIsButtonClosed(!isButtonClosed)
-    // };
-
-    // const hamburgerChange = () => {
-    //     if (isHamburgershow !== "nav-menu") setIsHamburgershow("nav");
-    //     else setIsHamburgershow("nav-menu");
-    // };
     
+
     const changehamburger = () => {
         setIsHamburgershow(!isHamburgershow);
     }
@@ -60,7 +52,7 @@ const Header = () => {
                                 <Link className="nav-link" to="bestseller" onClick={changehamburger}>Shop Detail</Link>
                             </li>
                             <li class="nav-item">
-                                <Link className="nav-link" to="footer" onClick={changehamburger}>Contact</Link>
+                                <Link className="nav-link" to="contact" onClick={changehamburger}>Contact</Link>
                             </li>
                         </ul>
                     </div>
@@ -76,8 +68,10 @@ const Header = () => {
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div className="cart-shopping-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            {/* <span className="cart-value">3</span> */}
+                            <Link to="cart">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                {/* <span className="cart-value">3</span> */}
+                            </Link>
                         </div>
                         <div className="user-profile">
                             <i class="fa-solid fa-user"></i>

@@ -20,7 +20,7 @@ const Our_products = () => {
                                     <p>{item.description}</p>
                                     <div className="order-details">
                                         <h3 className="product-price">$ {item.price}</h3>
-                                        <button className="order-now-button"><span><i class="fa-solid fa-cart-shopping"></i></span>Order Now</button>
+                                        <button className="order-now-button" ><span><i class="fa-solid fa-cart-shopping"></i></span>Order Now</button>
                                     </div>
                                 </div>
                             </div>
