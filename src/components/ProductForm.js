@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 const ProductForm = () => {
   const [formData, setFormData] = useState({
     name: '',
-    price: 0,
+    price: '',
     description: '',
     type: '',
     status: '',
-    discount: 0,
+    discount: '',
     userId: '',
-    rating: '',
-    likes: 0
+    rating: ''
   });
 
   const handleChange = (e) => {
@@ -18,10 +19,31 @@ const ProductForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can handle form submission, e.g., send data to backend
-    console.log(formData);
+    try {
+      const response = await axios.post('http://localhost:5000/products', formData);
+      console.log(response.data);
+
+      setFormData({
+        name: '',
+        price: '',
+        description: '',
+        type: '',
+        status: '',
+        discount: '',
+        userId: '',
+        rating: ''
+      });
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: 'Product added successfully',
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   return (
@@ -46,17 +68,13 @@ const ProductForm = () => {
         <div>
           <input type="number" id="discount" name="discount" value={formData.discount} onChange={handleChange} placeholder="Discount" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
         </div>
-        <div>
-          <input type="text" id="userId" name="userId" value={formData.userId} onChange={handleChange} placeholder="User ID" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
-        </div>
+
         <div>
           <input type="text" id="rating" name="rating" value={formData.rating} onChange={handleChange} placeholder="Rating" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
         </div>
+     
         <div>
-          <input type="number" id="likes" name="likes" value={formData.likes} onChange={handleChange} placeholder="Likes" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
-        </div>
-        <div>
-          <button type="submit" className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Submit</button>
+          <button type="submit" className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Add Product</button>
         </div>
       </form>
     </div>
