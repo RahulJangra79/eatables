@@ -45,11 +45,11 @@
 @media (max-width: 800px) {
     .cart-section-2 {
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        -webkit-overflow-scrolling: touch;
     }
 
     .cart-table th, .cart-table td {
-        white-space: nowrap; /* Prevent text wrapping */
+        white-space: nowrap;
     }
 }
 .qty-no{
