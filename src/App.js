@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Our_products from './components/Our_products';
@@ -7,6 +6,7 @@ import Footer1 from './components/Footer1';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
+import ProductForm from './components/ProductForm';
 import Cart from './components/Cart';
 import Contact from './components/Contact';
 
@@ -33,6 +33,10 @@ function App() {
             element={<Our_products />}
           ></Route>
           <Route
+                  path="/productform"
+                  element={<ProductForm />}
+               ></Route>
+          <Route
             path="/Bestseller"
             element={<Products />}
           ></Route>
@@ -42,5 +46,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
