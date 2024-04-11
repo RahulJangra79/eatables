@@ -28,7 +28,8 @@ const Our_products = () => {
                <div className="product-gallery-row">
                   {products.map((product, index) => (
                      <div className="product-item" key={index}>
-                        <div className="product-image" id={product.imageid}></div>
+                        {/*<div className="product-image" id={product.imageid}></div>*/}
+                        <img src={product.imageUrl} alt={product.name} className="product-image" />
                         <div className="product-down-part">
                            <h3>{product.name}</h3>
                            <p>{product.description}</p>
