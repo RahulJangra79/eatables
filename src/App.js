@@ -9,6 +9,7 @@ import { Home } from './pages/Home';
 import ProductForm from './components/ProductForm';
 import Cart from './components/Cart';
 import Contact from './components/Contact';
+import ManageProducts from './components/ManageProducts';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
             element={<Home />}
           ></Route>
           <Route
-            path="/Cart"
+            path="/cart"
             element={<Cart/>}
           ></Route>
           <Route
@@ -39,6 +40,10 @@ function App() {
           <Route
             path="/Bestseller"
             element={<Products />}
+          ></Route>
+          <Route
+            path="/manageproducts"
+            element={<ManageProducts />}
           ></Route>
         </Routes>
         <Footer1 />
