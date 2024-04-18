@@ -68,7 +68,7 @@ const Header = () => {
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div className="cart-shopping-bag">
-                            <Link to="cart">
+                            <Link to="/cart">
                                 <i class="fa-solid fa-bag-shopping"></i>
                                 {/* <span className="cart-value">3</span> */}
                             </Link>

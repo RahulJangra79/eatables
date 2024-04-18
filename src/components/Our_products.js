@@ -1,7 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Our_products.css"
 import { productsData } from "./data/ProductsData";
+import axios from 'axios';
+
 const Our_products = () => {
+    useEffect(()=>{
+        axios.get("http://localhost:5000/products").then((response)=>{
+            console.log("responseData=>", response)
+        }).catch((err)=>{
+            console.log("Error=>", err);
+        });
+    },[])
     console.log("products data=>",productsData)
     return(
         <div className="component-4">
