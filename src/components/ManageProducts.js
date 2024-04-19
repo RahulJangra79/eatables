@@ -1,53 +1,54 @@
-import React, { useEffect, useState } from 'react'
-import "./ManageProducts.css"
-import { productsData } from './data/ProductsData';
-import axios from 'axios'
+import React, { useEffect, useState } from 'react';
+import "./ManageProducts.css";
+import axios from 'axios';
 
 const ManageProducts = () => {
+    const [data, setData] = useState();
 
     useEffect(() => {
-        axios.fetch("http://localhost:5000/products").then((response)=>{
-            console.log("responseData =>", response)
-
-            }).catch((err)=>{
-                console.log("Error =>",err);
+        axios.get("http://localhost:5000/products")
+            .then((response) => {
+                console.log("response Data =>", response.data);
+                setData(response.data.products);
+            })
+            .catch((err) => {
+                console.log("Error =>", err);
             });
-    },[])
-    console.log("productsData =>",productsData)
+    }, []);
 
-
-  return (
-    <>
-      <h1>Manage Products</h1>
-      <table className='manage-products-table'>
-        <tr>
-            <td>Name</td>
-            <td>Price</td>
-            <td>Description</td>
-            <td>Type</td>
-            <td>Status</td>
-            <td>Discount</td>
-            <td>Rating</td>
-        </tr>
-        {
-            productsData.map((item)=>{
-
-            
-            <tr>
-                <td>{item.name}</td>
-                <td>{item.price}</td>
-                <td>{item.description}</td>
-                <td>{item.type}</td>
-                <td>{item.status}</td>
-                <td>{item.discount}</td>
-                <td>{item.rating}</td>
-            </tr>
-            }
-            )
-        }
-      </table>
-    </>
-  )
+    return (
+        <>
+            <h1>Manage Products</h1>
+            <table className='manage-products-table'>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Discount</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {data?.map((item, index) => {
+                      return(
+                        <tr>
+                            <td>{item.name}</td>
+                            <td>{item.price}</td>
+                            <td>{item.description}</td>
+                            <td>{item.type}</td>
+                            <td>{item.status}</td>
+                            <td>{item.discount}</td>
+                            <td>{item.rating}</td>
+                        </tr>
+                    )
+                    })}
+                </tbody>
+            </table>
+        </>
+    );
 }
 
-export default ManageProducts
+export default ManageProducts;
