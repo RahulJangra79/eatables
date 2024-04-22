@@ -4,9 +4,12 @@ import { productsData } from "./data/ProductsData";
 import axios from 'axios';
 
 const Our_products = () => {
+    
     useEffect(()=>{
-        axios.get("http://localhost:5000/products").then((response)=>{
-            console.log("responseData=>", response)
+        axios.get("http://localhost:5000/products")
+        .then((response)=>{
+            console.log("responseData=>", response.data);
+
         }).catch((err)=>{
             console.log("Error=>", err);
         });

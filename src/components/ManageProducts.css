@@ -1,3 +1,36 @@
+.manage-products{
+    margin: 50px 5%;
+    background-color: #f4f6f8;
+    border-radius: 10px;
+    padding: 50px;
+}
+.manage-products-heading{
+    color: #a22458;
+    margin-bottom: 30px;
+}
 .manage-products-table{
-    border: 2px solid maroon;
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+.manage-products-table th,
+.manage-products-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* text-align: center; */
+}
+.manage-products-table thead tr {
+    background-color: #f2f2f2;
+}
+.manage-products-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.manage-products-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+.manage-products-icons{
+    font-size: 18px;
+}
+.fa-trash{
+    margin-left: 30px;
 }
