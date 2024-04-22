@@ -8,7 +8,7 @@ const ManageProducts = () => {
     useEffect(() => {
         axios.get("http://localhost:5000/products")
             .then((response) => {
-                console.log("response Data =>", response.data);
+                console.log("response Data =>", response.data.products);
                 setData(response.data.products);
             })
             .catch((err) => {
@@ -17,8 +17,8 @@ const ManageProducts = () => {
     }, []);
 
     return (
-        <>
-            <h1>Manage Products</h1>
+        <div className='manage-products'>
+            <h1 className='manage-products-heading'>Manage Products</h1>
             <table className='manage-products-table'>
                 <thead>
                     <tr>
@@ -29,6 +29,7 @@ const ManageProducts = () => {
                         <th>Status</th>
                         <th>Discount</th>
                         <th>Rating</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,12 +43,16 @@ const ManageProducts = () => {
                             <td>{item.status}</td>
                             <td>{item.discount}</td>
                             <td>{item.rating}</td>
+                            <td className='manage-products-icons'>
+                              <button><i class="fa-solid fa-pen-to-square"></i></button>
+                              <button><i class="fa-solid fa-trash"></i></button>
+                            </td>
                         </tr>
                     )
                     })}
                 </tbody>
             </table>
-        </>
+        </div>
     );
 }
 
