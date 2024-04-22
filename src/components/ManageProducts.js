@@ -25,8 +25,14 @@ const ManageProducts = () => {
       const handleUpdate = (item) => {
         axios.put(`http://localhost:5000/products/${item._id}`, item)
           .then((response) => {
-            console.log("Updated Data =>", response.data);
-            setData(response.data.products);
+            console.log("Data Updated Successfully!");
+            const updatedData = data.map((product) => {
+                if (product._id === item._id) {
+                    return item;
+                }
+                return product;
+            });
+            setData(updatedData);
             setEditing(null);
           })
           .catch((err) => {
@@ -53,7 +59,7 @@ const ManageProducts = () => {
                 <tbody>
                     {data?.map((item, index) => {
                       return(
-                        <tr>
+                        <tr key={item._id}>
                             <td>{item.name}</td>
                             <td>{item.price}</td>
                             <td>{item.description}</td>
