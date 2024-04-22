@@ -18,7 +18,7 @@ export const Home = () => {
         <Service_card />
         <Our_products />
         <Component5 />
-        <Component6 />
+        {/* <Component6 /> */}
         <Store />
         <Products />
         <Review />

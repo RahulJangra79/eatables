@@ -7,6 +7,7 @@
 .manage-products-heading{
     color: #a22458;
     margin-bottom: 30px;
+    font-size: 30px;
 }
 .manage-products-table{
     text-align: left;
@@ -33,4 +34,41 @@
 }
 .fa-trash{
     margin-left: 30px;
+}
+
+
+
+.edit-product{
+    margin: 80px 5%;    
+}
+.edit-form-sections{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.edit-product-heading{
+    color: #a22458;
+    font-size: 30px;
+    text-align: center;
+}
+.label{
+    font-size: 24px;
+    margin: 10px 0;
+}
+.label input{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid #a22458;
+    width: 500px;
+}
+
+.edit-product-button{
+    padding: 10px 20px;
+    background-color: #a22458;
+    color: white;
+    margin-top: 50px;
+    width: 150px;
+    border-radius: 20px;
 }
