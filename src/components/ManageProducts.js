@@ -6,6 +6,30 @@ const ManageProducts = () => {
     const [data, setData] = useState();
 
     useEffect(() => {
+        /*axios.get("http://localhost:5000/products")
+            .then((response) => {
+                console.log("response Data =>", response.data.products);
+                setData(response.data.products);
+            })
+            .catch((err) => {
+                console.log("Error =>", err);
+            });*/
+            getData();
+            
+    }, []);
+    async function deleteUser(id)
+
+    {
+        console.log("id=>", id)
+       let result = await fetch("http://localhost:5000/products/"+id,{
+            method:'DELETE'
+        });
+           result= await result.json();
+                console.warn(result)
+                getData();
+    }
+    async function getData()
+    {
         axios.get("http://localhost:5000/products")
             .then((response) => {
                 console.log("response Data =>", response.data.products);
@@ -14,8 +38,7 @@ const ManageProducts = () => {
             .catch((err) => {
                 console.log("Error =>", err);
             });
-    }, []);
-
+    }
     return (
         <div className='manage-products'>
             <h1 className='manage-products-heading'>Manage Products</h1>
@@ -34,6 +57,7 @@ const ManageProducts = () => {
                 </thead>
                 <tbody>
                     {data?.map((item, index) => {
+                        console.log("item=>",item)
                       return(
                         <tr>
                             <td>{item.name}</td>
@@ -45,7 +69,7 @@ const ManageProducts = () => {
                             <td>{item.rating}</td>
                             <td className='manage-products-icons'>
                               <button><i class="fa-solid fa-pen-to-square"></i></button>
-                              <button><i class="fa-solid fa-trash"></i></button>
+                              <button onClick={()=>deleteUser(item._id)}><i class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>
                     )
@@ -57,3 +81,4 @@ const ManageProducts = () => {
 }
 
 export default ManageProducts;
+
