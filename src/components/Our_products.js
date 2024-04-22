@@ -1,20 +1,20 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import "./Our_products.css"
-import { productsData } from "./data/ProductsData";
 import axios from 'axios';
 
 const Our_products = () => {
+    const [productData, setProductData] = useState();
     
     useEffect(()=>{
         axios.get("http://localhost:5000/products")
         .then((response)=>{
-            console.log("responseData=>", response.data);
+            console.log("responseData=>", response.data.products);
+            setProductData(response.data.products);
 
         }).catch((err)=>{
             console.log("Error=>", err);
         });
     },[])
-    console.log("products data=>",productsData)
     return(
         <div className="component-4">
             <div className="products">
@@ -23,7 +23,7 @@ const Our_products = () => {
                 </div>
                     <div className="product-gallery">
                         <div className="product-gallery-row">
-                           {productsData.map((item, index)=>{
+                           {productData?.map((item, index)=>{
                             return (
                                 <div className="product-item">
                                 <div className="product-image" id={item.imageid}></div>
@@ -32,7 +32,7 @@ const Our_products = () => {
                                     <p>{item.description}</p>
                                     <div className="order-details">
                                         <h3 className="product-price">$ {item.price}</h3>
-                                        <button className="order-now-button" ><span><i class="fa-solid fa-cart-shopping"></i></span>Order Now</button>
+                                        <button className="order-now-button" ><span><i class="fa-solid fa-cart-shopping"></i></span>Add to Cart</button>
                                     </div>
                                 </div>
                             </div>
