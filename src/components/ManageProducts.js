@@ -6,11 +6,11 @@ const ManageProducts = () => {
   const [data, setData] = useState();
   const [editing, setEditing] = useState(null);
 
-  useEffect(async() => {
-    await axios.get("http://localhost:5000/products")
+  useEffect(() => {
+     axios.get("http://localhost:5000/products")
       .then((response) => {
-        console.log("response Data =>", response.data.products);
-        setData(response.data.products);
+        console.log("response Data =>", response?.data?.products);
+        setData(response?.data?.products);
       })
       .catch((err) => {
         console.log("Error =>", err);
