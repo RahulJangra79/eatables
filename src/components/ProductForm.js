@@ -39,7 +39,7 @@ const ProductForm = () => {
       Swal.fire({
         icon: 'success',
         title: 'Success',
-        text: 'Product added successfully',
+        text: 'Product Added Successfully',
       });
     } catch (error) {
       console.error('Error submitting form:', error);

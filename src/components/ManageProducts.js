@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ManageProducts.css";
 import axios from "axios";
+import Swal from 'sweetalert2';
 
 const ManageProducts = () => {
   const [data, setData] = useState();
@@ -27,6 +28,13 @@ const ManageProducts = () => {
       .put(`http://localhost:5000/products/${item._id}`, item)
       .then((response) => {
         console.log("Data Updated Successfully!");
+        // ********
+        Swal.fire({
+          icon: 'success',
+          title: 'Success',
+          text: 'Product Updated Successfully',
+        });
+        // ********
         const updatedData = data.map((product) => {
           if (product._id === item._id) {
             return item;
@@ -41,7 +49,7 @@ const ManageProducts = () => {
       });
   };
 
-  
+
   return (
     <div className="manage-products">
       <h1 className="manage-products-heading">Manage Products</h1>
