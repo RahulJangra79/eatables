@@ -69,7 +69,7 @@ const ManageProducts = () => {
                   <button onClick={() => handleEdit(item)}>
                     <i class="fa-solid fa-pen-to-square"></i>
                   </button>
-                  <button onClick={()=>deleteUser(item._id)}><i class="fa-solid fa-trash"></i></button>
+                  <button><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
             );
