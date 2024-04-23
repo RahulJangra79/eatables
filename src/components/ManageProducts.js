@@ -7,7 +7,8 @@ const ManageProducts = () => {
   const [editing, setEditing] = useState(null);
 
   useEffect(() => {
-     axios.get("http://localhost:5000/products")
+    axios
+      .get("http://localhost:5000/products")
       .then((response) => {
         console.log("response Data =>", response?.data?.products);
         setData(response?.data?.products);
@@ -17,29 +18,30 @@ const ManageProducts = () => {
       });
   }, []);
 
-    const handleEdit = (item) => {
-        setEditing(item);
-      };
-    
-      const handleUpdate = (item) => {
-        axios.put(`http://localhost:5000/products/${item._id}`, item)
-          .then((response) => {
-            console.log("Data Updated Successfully!");
-            const updatedData = data.map((product) => {
-                if (product._id === item._id) {
-                    return item;
-                }
-                return product;
-            });
-            setData(updatedData);
-            setEditing(null);
-          })
-          .catch((err) => {
-            console.log("Error =>", err);
-          });
-      };
-    
+  const handleEdit = (item) => {
+    setEditing(item);
+  };
 
+  const handleUpdate = (item) => {
+    axios
+      .put(`http://localhost:5000/products/${item._id}`, item)
+      .then((response) => {
+        console.log("Data Updated Successfully!");
+        const updatedData = data.map((product) => {
+          if (product._id === item._id) {
+            return item;
+          }
+          return product;
+        });
+        setData(updatedData);
+        setEditing(null);
+      })
+      .catch((err) => {
+        console.log("Error =>", err);
+      });
+  };
+
+  
   return (
     <div className="manage-products">
       <h1 className="manage-products-heading">Manage Products</h1>
