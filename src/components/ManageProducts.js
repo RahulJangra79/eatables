@@ -49,6 +49,23 @@ const ManageProducts = () => {
       });
   };
 
+  async function deleteUser(id) {
+    console.log("id=>", id)
+    let result = await fetch("http://localhost:5000/products/" + id, {
+      method: 'DELETE'
+    });
+    result = await result.json();
+    console.warn(result);
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Success',
+      text: 'Product Deleted Successfully',
+    });
+
+    const updatedData = data.filter((item) => item._id !== id);
+    setData(updatedData);
+  }
 
   return (
     <div className="manage-products">
@@ -79,7 +96,9 @@ const ManageProducts = () => {
                   <button onClick={() => handleEdit(item)}>
                     <i class="fa-solid fa-pen-to-square"></i>
                   </button>
-                  <button><i class="fa-solid fa-trash"></i></button>
+                  <button onClick={() => deleteUser(item._id)}>
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
                 </td>
               </tr>
             );
