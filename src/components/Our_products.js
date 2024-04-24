@@ -3,6 +3,14 @@ import "./Our_products.css"
 import axios from 'axios';
 
 const Our_products = () => {
+
+    function truncateDescription(description, maxLength) {
+        if (description.length > maxLength) {
+          return `${description.substring(0, maxLength)}...`;
+        }
+        return description;
+      }
+
     const [productData, setProductData] = useState();
     
     useEffect(()=>{
@@ -29,7 +37,7 @@ const Our_products = () => {
                                 <div className="product-image" id={item.imageid}></div>
                                 <div className="product-down-part">
                                     <h3>{item.name}</h3>
-                                    <p>{item.description}</p>
+                                    <p>{truncateDescription (item.description,70)}</p>
                                     <div className="order-details">
                                         <h3 className="product-price">$ {item.price}</h3>
                                         <button className="order-now-button" ><span><i class="fa-solid fa-cart-shopping"></i></span>Add to Cart</button>
