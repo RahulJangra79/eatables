@@ -22,7 +22,7 @@ function App() {
             element={<Home />}
           ></Route>
           <Route
-            path="/cart"
+            path="/Cart"
             element={<Cart/>}
           ></Route>
           <Route
