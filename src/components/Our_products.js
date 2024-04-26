@@ -1,8 +1,27 @@
 import React, {useEffect, useState} from "react";
 import "./Our_products.css"
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
-const Our_products = () => {
+const Our_products = () => { 
+
+    const handleCart = (product) => {
+        let cartProducts = localStorage.getItem('cartProducts');
+        if (cartProducts) {
+            cartProducts = JSON.parse(cartProducts);
+        }
+        else {
+            cartProducts = [];
+        }
+        cartProducts.push(product);
+        localStorage.setItem('cartProducts', JSON.stringify(cartProducts));
+        console.log('Cart Products:' , JSON.parse(localStorage.getItem('cartProducts')));
+
+        Swal.fire({
+            icon: 'success',
+            title: 'Product Added To Cart'
+          });
+    }
 
     function truncateDescription(description, maxLength) {
         if (description.length > maxLength) {
@@ -40,7 +59,7 @@ const Our_products = () => {
                                     <p>{truncateDescription (item.description,70)}</p>
                                     <div className="order-details">
                                         <h3 className="product-price">$ {item.price}</h3>
-                                        <button className="order-now-button" ><span><i class="fa-solid fa-cart-shopping"></i></span>Add to Cart</button>
+                                        <button className="order-now-button" onClick={() => handleCart(item)} ><span><i class="fa-solid fa-cart-shopping"></i></span>Add to Cart</button>
                                     </div>
                                 </div>
                             </div>
