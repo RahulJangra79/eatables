@@ -53,7 +53,8 @@ const Our_products = () => {
                            {productData?.map((item, index)=>{
                             return (
                                 <div className="product-item">
-                                <div className="product-image" id={item.imageid}></div>
+                                <div className="product-image" ></div>
+                                <img src={item.imageUrl}></img>
                                 <div className="product-down-part">
                                     <h3>{item.name}</h3>
                                     <p>{truncateDescription (item.description,70)}</p>
