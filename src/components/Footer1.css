@@ -77,12 +77,12 @@
 
 .footer-icons{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     @media only screen and (max-width:1210px){
-        width: 300px;
-        margin: 20px auto;
+        /* width: 250px; */
+        margin: 20px 0px;
     }
 }
 
@@ -93,7 +93,11 @@
     border-radius: 50%;
     font-size: 24px;
     line-height: 2;
-    margin-left: 20px;
+    margin: 0px 5px;
+
+    /* @media only screen and (max-width:1210px){
+        margin-left: 0px;
+    } */
 }
 
 .fa-twitter:hover{
@@ -128,6 +132,7 @@
 
 .footer-section-2-first{
    text-align: left;
+   width: 300px;
 }
 .footer-section-2-first ul{
     list-style: none;
