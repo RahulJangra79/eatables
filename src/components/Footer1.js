@@ -20,7 +20,7 @@ const Footer1 =() => {
                 </div>
                  <hr/>
 
-                 <div className="footer-section-2">
+                <div className="footer-section-2">
                     <div className="footer-section-2-first">
                         <ul>
                             <li><h2>Why People Like us!</h2></li>
@@ -66,16 +66,15 @@ const Footer1 =() => {
                             <li><a>Payment Accepted</a></li>
                         </ul>
                     </div>
-                 </div>
+                </div>
 
-                 <div className="footer-section-3">
+                <div className="footer-section-3">
                     <button>Read More</button>
-                 </div>
+                </div>
 
-                 <div className="footer-section-4">
+                <div className="footer-section-4">
                     <div className="footer-end-1"><span>Eatables</span>,All Rights Reserved</div>
-                    <div className="footer-end-2">Designed By HTML Codex Distributed By ThemeWagon</div>
-                 </div>
+                </div>
 
 
             </div>

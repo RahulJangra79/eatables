@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap'); 
-.component8{
+/* .component8{
     margin: 0px 24px;
-}
+} */
 .bestseller{
     margin-top: 150px;
     color: #455958;
@@ -40,7 +40,7 @@
 {
     .bestseller-des{
         font-size: 16px;
-        margin: 0;
+        margin: 0 20px;
     } 
 }
 
@@ -59,11 +59,9 @@
 .bestseller-products-items-1{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-left: 100px;
-    padding-right: 100px;
+    justify-content: center;
 }
-@media only screen and (max-width:415px)
+@media only screen and (max-width:426px)
 {
     .bestseller-products-items-1{
         display: block;
@@ -72,21 +70,24 @@
     }
 }
 
-@media only screen and (min-width:415px) and (max-width:860px)
+@media only screen and (min-width:426px) and (max-width:860px)
 {
     .bestseller-products-items-1{
         display: block;
+        padding: 0 10%;
     }
 }
 
 .bestseller-border{
     border-radius: 15px;
     background: rgb(244, 246, 246);
-    height: 200px;
+    height: auto;
     width: 400px;
     color: #747D88;
     padding: 24px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -94,7 +95,7 @@
 {
     .bestseller-border{
         width: 100%;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 }
 
@@ -102,14 +103,20 @@
 {
     .bestseller-border{
         width: 100%;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
+    }
+}
+@media only screen and (min-width: 860px)
+{
+    .bestseller-border{
+        margin: 10px;
     }
 }
 
 .kachori-photo{
     background-image: url('/src/Images/kachori.jpg');
-    height: 150px;
-    width: 150px;
+    min-height: 150px;
+    min-width: 150px;
     background-size: 100% 100%;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -117,8 +124,8 @@
 
 .fries-photo{
     background-image: url('/src/Images/fries.jpg');
-    height: 150px;
-    width: 150px;
+    min-height: 150px;
+    min-width: 150px;
     background-size: 150px 150px;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -126,8 +133,8 @@
 
 .manchurian-photo{
     background-image: url('/src/Images/manchurian.jpg');
-    height: 150px;
-    width: 150px;
+    min-height: 150px;
+    min-width: 150px;
     background-size: 200px 150px;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -135,8 +142,8 @@
 
 .noodles-photo{
     background-image: url('/src/Images/noodles.jpg');
-    height: 150px;
-    width: 150px;
+    min-height: 150px;
+    min-width: 150px;
     background-size: 100% 100%;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -144,8 +151,8 @@
 
 .springroll-photo{
     background-image: url('/src/Images/spring-roll.jpg');
-    height: 150px;
-    width: 150px;
+    min-height: 150px;
+    min-width: 150px;
     background-size: 150px 150px;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -153,16 +160,15 @@
 
 .dahi-golgappe-photo{
     background-image: url('/src/Images/dahi-golgappe.jpg');
-    height: 150px;
-    width: 150px;
+    min-height: 150px;
+    min-width: 150px;
     background-size: 150px 150px;
     border-radius: 50%;
     background-repeat: no-repeat;
 }
 
 .same{
-    margin-left: 10%;
-    text-align: left;
+    text-align: center;
 }
 
 .product-rating-name{
@@ -204,249 +210,3 @@
     margin-right: 10px;
 }
 
-
-/* bestseller second component */
-.bestseller-second-component{
-    margin-top: 30px;
-    display: flex;
-    height: 400px;
-    width: auto;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-@media only screen and (max-width:415px)
-{
-    .bestseller-second-component{
-        height: 1900px;
-        width: auto;
-    }
-}
-
-@media only screen and (min-width: 415px) and (max-width: 640px)
-{
-    .bestseller-second-component{
-        height: 1800px;
-    }
-}
-
-@media only screen and (min-width: 640px) and (max-width: 790px)
-{
-    .bestseller-second-component{
-        height: 1050px;
-    }
-}
-
-@media only screen and (min-width: 790px) and (max-width: 1501px)
-{    
-    .bestseller-second-component{
-        height: 1000px;
-    }
-}
-
-.bestseller-second-component-items{
-    height: 400px;
-    width: 300px;
-    margin: 10px;
-}
-
-@media only screen and (max-width:415px)
-{
-    .bestseller-second-component-items{
-        height: 520px;
-        width: 350px;
-        margin-top: -40px;
-    }
-}
-
-@media only screen and (min-width: 415px) and (max-width: 790px)
-{ 
-    .bestseller-second-component-items{
-        margin-top: 10%;
-    }
-}
-
-@media only screen and (min-width: 790px) and (max-width: 1501px)
-{    
-    .bestseller-second-component-items{
-        margin-top: 30px;
-    }
-}
-
-.bestseller-second-component-image1{
-    background-image: url('/src/Images/pizza.jpg');
-    height: 200px;
-    width: 300px;
-    background-size: cover;
-    border-radius: 15px;
-}
-
-@media only screen and (max-width:415px)
-{
-.bestseller-second-component-image1{
-    background-image: url('/src/Images/pizza.jpg');
-    height: 250px;
-    width: 350px;
-    background-size: 350px 250px;
-}
-}
-
-@media only screen and (min-width: 790px) and (max-width: 1501px)
-{    
-    .bestseller-second-component-image1{
-        background-image: url('/src/Images/pizza.jpg');
-        height: 250px;
-        width: 300px;
-        background-size: 350px 250px;
-    }
-}
-
-.bestseller-second-component-image2{
-    background-image: url('/src/Images/steam-momos.jpg');
-    height: 200px;
-    width: 300px;
-    background-size: cover;
-    border-radius: 15px;
-}
-
-@media only screen and (max-width:415px)
-{
-.bestseller-second-component-image2{
-    background-image: url('/src/Images/steam-momos.jpg');
-    height: 250px;
-    width: 350px;
-    background-size: 350px 250px;
-    border-radius: 15px;
-}
-}
-
-@media only screen and (min-width: 790px) and (max-width: 1501px)
-{    
-    .bestseller-second-component-image2{
-        background-image: url('/src/Images/steam-momos.jpg');
-        height: 250px;
-        width: 300px;
-        background-size: 350px 250px;
-    }
-}
-
-.bestseller-second-component-image3{
-    background-image: url('/src/Images/pani-golgappe.jpg');
-    height: 200px;
-    width: 300px;
-    background-size: cover;
-    border-radius: 15px;
-}
-
-@media only screen and (max-width:415px)
-{
-    .bestseller-second-component-image3{
-        background-image: url('/src/Images/pani-golgappe.jpg');
-        height: 250px;
-        width: 350px;
-        background-size: 350px 250px;
-        border-radius: 15px;
-    }
-}
-
-@media only screen and (min-width: 790px) and (max-width: 1501px)
-{    
-    .bestseller-second-component-image3{
-        background-image: url('/src/Images/pani-golgappe.jpg');
-        height: 250px;
-        width: 300px;
-        background-size: 350px 250px;
-    }
-}
-
-.bestseller-second-component-image4{
-    background-image: url('/src/Images/samosa.jpg');
-    height: 200px;
-    width: 300px;
-    background-size: cover;
-    border-radius: 15px;
-}
-
-@media only screen and (max-width:415px)
-{
-    .bestseller-second-component-image4{
-        background-image: url('/src/Images/samosa.jpg');
-        height: 250px;
-        width: 350px;
-        background-size: 350px 250px;
-        border-radius: 15px;
-    }
-}
-
-@media only screen and (min-width: 790px) and (max-width: 1501px)
-{    
-    .bestseller-second-component-image4{
-        background-image: url('/src/Images/samosa.jpg');
-        height: 250px;
-        width: 300px;
-        background-size: 350px 250px;
-    }
-}
-
-.bestseller-second-component-image1-des{
-    text-align: center;
-}
-
-@media only screen and (min-width: 790px) and (max-width: 1501px)
-{    
-    .bestseller-second-component-image1-des{
-        text-align: center;
-    }
-    
-}
-
-.bestseller-second-component-image1-des-name{
-    color: #455958;
-    font-size: 25px;
-    font-style: Raleway;
-    font-weight: 500;
-    margin-top: 20px;
-}
-
-.bestseller-second-component-image1-des-star{
-    margin-top: 10px;
-    color: lightgreen;
-    font-style: Raleway;
-}
-
-.bestseller-second-component-image1-des-price{
-    font-style: Raleway;
-    color: #455958;
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-.bestseller-second-component-image1-des-buy-btn{
-    margin-top: 20px;
-    height: 40px;
-    width: 150px;
-    color: rgb(52, 191, 52);
-    font-size: 20px;
-    border-radius: 20px;
-    border: 2px solid #ffd000;
-    margin-left: 75px;
-    line-height: 35px;
-}
-
-@media only screen and (max-width:415px)
-{
-    .bestseller-second-component-image1-des-buy-btn{
-        margin-left: 100px;
-        line-height: 35px;
-    }
-}
-
-.bestseller-second-component-image1-des-buy-btn:hover{
-    background-color: #ffd000;
-    color: white;
-}
-
-.bestseller-second-component-image1-des-buy-btn i{
-    margin-right: 10px;
-}

@@ -66,7 +66,16 @@
     width: 700px;
     color: #62052c;
 
-    @media only screen and (max-width:415px)
+    @media only screen and (max-width:320px)
+    {
+        padding-top: 25px;
+        font-size: 40px;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+        width: 90%;
+    }
+
+    @media only screen and (min-width: 320px) and (max-width:426px)
     {
         padding-top: 25px;
         font-size: 45px;
@@ -75,10 +84,10 @@
         width: 90%;
     }
 
-    @media only screen and (min-width:415px) and (max-width:970px)
+    @media only screen and (min-width:426px) and (max-width:970px)
     {
         padding-top: 25px;
-        font-size: 60px;
+        font-size: 55px;
         word-spacing: 0px;
         letter-spacing: 0px;
         width: 80%;

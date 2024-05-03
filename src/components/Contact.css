@@ -141,7 +141,6 @@ iframe{
     width: 30px;
     color: #a22458;
     font-size: 30px;
-    margin-right: 20px;
 }
 .contact-our-details-span{
     font-size: 24px;
@@ -149,6 +148,7 @@ iframe{
     color: #45595b;
     font-weight: 600;
     font-family: Raleway;
+    margin-left: 20px;
 }
 .contact-our-details-para{
     margin-left: 50px;

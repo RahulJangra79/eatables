@@ -19,13 +19,13 @@
     }
 }
 .service-detail-card{
-    width: 88%;
+    /* width: 88%; */
     height: 365px;
     margin: 0 5%;
     padding: 48px 12px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 
     @media only screen and (max-width: 415px){
         padding: 20px 10px;
@@ -60,7 +60,7 @@
     line-height: 60px;
     align-items: center !important;
     border-radius: 50%;
-    margin:  0 70px 50px;
+    /* margin:  0 70px 50px; */
     padding: 20px;
     color: white;
     background-color: #ffa424;
@@ -68,16 +68,18 @@
     z-index: 2;
     position: relative;
 }
-.service-detail-card-item::after{
+.service-detail-card-item::after {
     content: "";
     width: 50px;
     height: 50px;
     background-color: #ffa424;
     position: absolute;
     z-index: 1;
-    bottom: 136px;
-    transform: translate(-50%) rotate(45deg);
+    top: 83px; /* Adjust this value according to your design */
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg); /* Rotate and position */
 }
+
 
 .heading-5-service-card{
     color: #45595B;
@@ -87,4 +89,5 @@
     font-weight: 600;
     line-height: 1.2;
     color: #45595b;
+    margin-top: 30px;
 }
