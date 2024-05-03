@@ -84,7 +84,7 @@ const ProductForm = () => {
           console.error('Error submitting form:', error);
       }
   };
-  
+
 
    return (
       <div className="max-w-md mx-auto">
