@@ -40,7 +40,9 @@ const Cart = () => {
                         {cartProducts.map((item, index) => {
                             return(
                                 <tr>
-                                    <td><div className={item.imageClass}></div></td>
+                                    <td><div className={item.imageClass}></div>
+                                    <img src={item.imageUrl}></img>
+                                    </td>
                                     <td className="product-name">{item.name}</td>
                                     <td className="product-price">{item.price}</td>
                                     <td className="plus-minus">
