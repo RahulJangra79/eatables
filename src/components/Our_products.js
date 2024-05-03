@@ -65,11 +65,15 @@ const Our_products = () => {
                             </div>
                             )
                            }) }
+
                         </div>
-                    </div>
+                     </div>
+                  ))}
+               </div>
             </div>
-        </div>
-    )
+         </div>
+      </div>
+   )
 }
 
-export default Our_products
+export default Our_products;
