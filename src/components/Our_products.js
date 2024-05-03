@@ -1,3 +1,4 @@
+
 import React, {useEffect, useState} from "react";
 import "./Our_products.css"
 import axios from 'axios';
@@ -65,11 +66,15 @@ const Our_products = () => {
                             </div>
                             )
                            }) }
+
                         </div>
-                    </div>
+                     </div>
+                  ))}
+               </div>
             </div>
-        </div>
-    )
+         </div>
+      </div>
+   )
 }
 
-export default Our_products
+export default Our_products;

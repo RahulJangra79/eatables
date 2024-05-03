@@ -28,13 +28,14 @@ const ProductForm = () => {
          formData.append('file', image);
          formData.append('upload_preset', 'y65idw6m');
 
+
          const response = await axios.post(
             'https://api.cloudinary.com/v1_1/ds4sj7qfj/image/upload',
             formData
          );
 
          console.log('Image uploaded:', response.data.secure_url);
-         setImageUrl(response.data.secure_url); // Save the image URL to state
+         setImageUrl(response.data.secure_url); 
       } catch (error) {
          console.error('Error uploading image:', error);
       }
@@ -58,7 +59,7 @@ const ProductForm = () => {
               });
           }
   
-          const productData = { ...formData, image_URL: imageUrl }; // Include image URL in formData
+          const productData = { ...formData, image_URL: imageUrl }; 
   
           const response = await axios.post('http://localhost:5000/products', productData);
           console.log(response.data);
@@ -74,7 +75,7 @@ const ProductForm = () => {
               rating: ''
           });
   
-          setImageUrl(''); // Clear image URL after submission
+          setImageUrl(''); 
   
           Swal.fire({
               icon: 'success',
@@ -111,6 +112,30 @@ const ProductForm = () => {
                <input type="number" id="discount" name="discount" value={formData.discount} onChange={handleChange} placeholder="Discount" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
             </div>
 
+
+   return (
+      <div className="max-w-md mx-auto">
+         <h2 className="text-2xl font-bold mb-4">Add Product</h2>
+         <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+               <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Product Name" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
+            </div>
+            <div>
+               <input type="number" id="price" name="price" value={formData.price} onChange={handleChange} placeholder="Price" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
+            </div>
+            <div>
+               <textarea id="description" name="description" value={formData.description} onChange={handleChange} placeholder="Description" rows="4" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"></textarea>
+            </div>
+            <div>
+               <input type="text" id="type" name="type" value={formData.type} onChange={handleChange} placeholder="Type" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
+            </div>
+            <div>
+               <input type="text" id="status" name="status" value={formData.status} onChange={handleChange} placeholder="Status" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
+            </div>
+            <div>
+               <input type="number" id="discount" name="discount" value={formData.discount} onChange={handleChange} placeholder="Discount" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
+            </div>
+
             <div>
                <input type="text" id="rating" name="rating" value={formData.rating} onChange={handleChange} placeholder="Rating" className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
             </div>
@@ -118,6 +143,7 @@ const ProductForm = () => {
                <input type="file" accept="image/*" onChange={handleImageChange} />
                <button onClick={handleUpload}>Upload</button>
             </div>
+
 
             <div>
                <button type="submit"  className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Add Product</button>
