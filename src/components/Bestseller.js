@@ -37,35 +37,6 @@ const Products = () => {
           })}
         </div>
       </div>
-
-      <div className="bestseller-second-component">
-        {bestsellerData_second.map((item, index) => 
-        {
-          return (
-            <div className="bestseller-second-component-items">
-              <div className={item.imageclass}></div>
-              <div className="bestseller-second-component-image1-des">
-                <div className="bestseller-second-component-image1-des-name">
-                  {item.name}
-                </div>
-                <div className="bestseller-second-component-image1-des-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <div className="bestseller-second-component-image1-des-price">
-                  {item.price}
-                </div>
-                <div className="bestseller-second-component-image1-des-buy-btn">
-                  <i class="fa-solid fa-cart-shopping"></i>Order Now
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
     </div>
   );
 };

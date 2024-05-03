@@ -41,12 +41,12 @@ export const bestsellerData_second = [
     {
         imageclass: "bestseller-second-component-image2",
         name: "Steam Momos",
-        price: "7.50$"
+        price: "7.50 $"
     },
     {
         imageclass: "bestseller-second-component-image3",
         name: "Pani Golgappe",
-        price: "4.79"
+        price: "4.79 $"
     },
     {
         imageclass: "bestseller-second-component-image4",

@@ -19,10 +19,10 @@
 }
 .bigger-products{
     height: 560px;
-    margin: 0 95px;
+    /* margin: 0 95px; */
     padding: 48px 12px;
 }
-@media only screen and (max-width:415px)
+@media only screen and (max-width: 426px)
 {
     .bigger-products{
         height: 1750px;
@@ -31,22 +31,22 @@
     }
 }
 .bigger-product-items{
-    margin: -24px -12px 0;
+    margin: -24px -10px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 12px;
 }
-@media only screen and (max-width:415px)
+@media only screen and (max-width:426px)
 {
     .bigger-product-items{
         display: block;
     }
 }
-@media only screen and (min-width:415px) and (max-width:1400px)
+@media only screen and (min-width:426px) and (max-width:1400px)
 {
     .bigger-product-items{
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
     }
 }
 
@@ -54,11 +54,10 @@
     height: 463px;
     width: 440px;
     margin: 24px 10px 0;
-    /* border: 1px solid orange; */
     border-radius: 10px;
     position: relative;
 }
-@media only screen and (max-width:415px)
+@media only screen and (max-width:426px)
 {
     .bigger-product-item{
         width: 95%;
@@ -70,7 +69,8 @@
     width: 100%;
     height: 330px;
     border-radius: 10px 10px 0 0;
-    background-size: 463px 330px;
+    /* background-size: 463px 330px; */
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 #fries-11{
@@ -100,7 +100,7 @@
     width: 100%;
     border-radius: 0 0 10px 10px;
 }
-.bigger-product-item-center-part{
+.bigger-product-item-center-part {
     height: 130px;
     width: 250px;
     padding: 25px;
@@ -108,16 +108,18 @@
     font-family: Raleway;
     background-color: white;
     position: absolute;
-    top: 260px;
-    left: 20%;
+    top: 70%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Centering trick */
     border-radius: 10px;
 }
-@media only screen and (max-width:415px)
+
+/* @media only screen and (max-width:426px)
 {
     .bigger-product-item-center-part{
         left: 50px;
     }
-}
+} */
 .bigger-product-item-center-part h3{
     color: rgb(89, 89, 89);
 }

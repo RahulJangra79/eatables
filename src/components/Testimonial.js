@@ -34,7 +34,6 @@ const Testimonial = () =>{
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         </p>
-                        <div className="icon"><i class="fa-solid fa-quote-right"></i></div>
                     </div>
                 </div>
                 </div>

@@ -3,12 +3,6 @@
     width: 100%;
     padding: 48px 12px;
 }
-@media only screen and (max-width:415px)
-{
-    .component-4{
-        height: 3770px;
-    }
-}
 .products{
     margin: 0 5%;
     padding: 48px 12px;
@@ -31,13 +25,13 @@
 @media only screen and (max-width:415px)
 {
     .h1-our-product{
-        font-size: 30px;
+        font-size: 30px !important;
     }
 }
 .product-gallery-row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 /* @media only screen and (max-width:750px)
 {
@@ -109,6 +103,7 @@
     justify-content: space-between;
 }
 .order-now-button{
+    height: 40px;
     width: 150px;
     background: transparent;
     color: #ff7b00;
