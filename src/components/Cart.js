@@ -8,35 +8,14 @@ const Cart = () => {
 
     const [quantities, setQuantities] = useState(CartData.map(item => ({ id: item.id, quantity: 1 })));
     const [totalPrice, setTotalPrice] = useState(0);
-
-    // Function to handle increasing quantity
-    const increaseQuantity = (id) => {
-        setQuantities(prevQuantities => 
-            prevQuantities.map(qty => 
-                qty.id === id ? { ...qty, quantity: qty.quantity + 1 } : qty
-            )
-        );
-    };
-
-    // Function to handle decreasing quantity
-    const decreaseQuantity = (id) => {
-        setQuantities(prevQuantities => 
-            prevQuantities.map(qty => 
-                qty.id === id && qty.quantity > 1 ? { ...qty, quantity: qty.quantity - 1 } : qty
-            )
-        );
-    };
-
+    const [cartProducts, setCartProducts] = useState([]);
 
     useEffect(() => {
-        // Calculate total price based on quantities
-        let total = 0;
-        CartData.forEach(item => {
-            const quantity = quantities.find(qty => qty.id === item.id).quantity;
-            total += item.price * quantity;
-        });
-        setTotalPrice(total);
-    }, [quantities]);
+        const storedCartProducts = localStorage.getItem("cartProducts");
+        if (storedCartProducts) {
+            setCartProducts(JSON.parse(storedCartProducts));
+        }
+    }, []);
 
     return(
         <>
@@ -58,16 +37,16 @@ const Cart = () => {
                     </thead>
 
                     <tbody>
-                        {CartData.map((item, index) => {
+                        {cartProducts.map((item, index) => {
                             return(
                                 <tr>
                                     <td><div className={item.imageClass}></div></td>
                                     <td className="product-name">{item.name}</td>
                                     <td className="product-price">{item.price}</td>
                                     <td className="plus-minus">
-                                    <button className="plus" onClick={() => decreaseQuantity(item.id)}><i className="fa-solid fa-minus"></i></button>
+                                    <button className="plus"><i className="fa-solid fa-minus"></i></button>
                                     <span className="qty-no">{quantities.find(qty => qty.id === item.id).quantity}</span>
-                                    <button className="plus" onClick={() => increaseQuantity(item.id)}><i className="fa-solid fa-plus"></i></button>
+                                    <button className="plus"><i className="fa-solid fa-plus"></i></button>
                                 </td>
                                     <td className="product-total-price">{item.totalPrice}</td>
                                     <td><button className="cross-icon"><i class="fa-solid fa-xmark"></i></button></td>
