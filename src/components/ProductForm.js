@@ -33,7 +33,7 @@ const ProductForm = () => {
          );
 
          console.log('Image uploaded:', response.data.secure_url);
-         setImageUrl(response.data.secure_url); // Save the image URL to state
+         setImageUrl(response.data.secure_url); 
       } catch (error) {
          console.error('Error uploading image:', error);
       }
@@ -57,7 +57,7 @@ const ProductForm = () => {
               });
           }
   
-          const productData = { ...formData, image_URL: imageUrl }; // Include image URL in formData
+          const productData = { ...formData, image_URL: imageUrl }; 
   
           const response = await axios.post('http://localhost:5000/products', productData);
           console.log(response.data);
@@ -73,7 +73,7 @@ const ProductForm = () => {
               rating: ''
           });
   
-          setImageUrl(''); // Clear image URL after submission
+          setImageUrl(''); 
   
           Swal.fire({
               icon: 'success',
