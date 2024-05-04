@@ -1,53 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 .store1{
-    height: 650px;
+    height: auto;
     width: 100%;
     background: rgb(255, 165, 0, 0.85);
     font-family: Raleway;
 }
 
-@media only screen and (max-width:1050px)
-{
-    .store1{
-        display: none !important;
-    }
-}
-
 .burger-big{
     background-image: url('/src/Images/burger-big.png');
-    height: 700px;
+    height: 600px;
     width: 550px;
-    background-size: 550px 700px;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 150px;
+    margin: 0 auto;
 }
 
-
-@media only screen and (max-width:415px)
-{
-    .burger-big{
-        width: 400px;
-        height: 400px;
-        background-size: 400px 400px;
-    }
-}
-
-@media only screen and (min-width:415px) and (max-width:1050px)
+@media only screen and (max-width: 560px)
 {
    
     .burger-big{
-        width: 70%;
+        width: 100%;
         height: 600px;
         background-size: 100% 600px;
-        margin-left: 15%;
     }
 }
 
 .store2{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 100px;
 }
 
 @media only screen and (max-width:415px)
@@ -66,81 +47,44 @@
 
 .the-text{
     font-size: 60px;
-    margin-top: 100px;
+    text-align: left;
+    width: 50%;
+    padding: 8% 0px 0px 8%;
+
 }
 
-@media only screen and (max-width:415px)
+@media only screen and (max-width:426px)
 {
     .the-text
     {
         font-size: 40px;
-        margin-top: -35px;
+        width: 100%;
     }
 }
 
-@media only screen and (min-width:415px) and (max-width:1050px)
+@media only screen and (min-width:426px) and (max-width:1050px)
 {
    
     .the-text
     {
-        margin: 0;
-        font-size: 500%;
-        margin-top: -35px;
+        width: 100%;
     }
 }
 
 .fresh-food{
     color: white;
     font-weight: 700;
-    margin-right: 210px;
-}
-
-@media only screen and (max-width:415px)
-{
-    .fresh-food{
-        width: 300px;
-        margin-left: 20px;
-    }
-}
-
-
-@media only screen and (min-width:415px) and (max-width:1050px)
-{
-   
-    .fresh-food{
-        width: 100%;
-        /* margin-left: 15%; */
-    }
 }
 
 .our-store{
     color: #455958;
     text-align: left;
-    margin-left: 150px;
     margin-top: 20px;
-}
-
-@media only screen and (max-width:415px)
-{
-    .our-store{
-       margin-left:20px;
-        margin-top: 10px;
-    }
-}
-
-@media only screen and (min-width:415px) and (max-width:1050px)
-{
-    .our-store{
-        margin-left: 15%;
-        width: 85%;
-         margin-top: 10px;
-     }
 }
 
 .store-des{
     font-size: 18px;
     text-align: left;
-    margin-left: 150px;
     color: #455958;
     margin-top: 20px;
 }
@@ -149,8 +93,6 @@
 {
     .store-des{
         margin-top: 15px;
-        width: 370px;
-        margin-left:20px;
     }
 }
 
@@ -161,17 +103,13 @@
         width: 80%;
         margin-top: 15px;
         font-size: 30%;
-        margin-left: 15%;
     }
 }
 
 .buy-btn{
-    margin-left: 130px;
     margin-top: 20px;
     height: 60px;
     width: 150px;
-    align-items: left;
-    margin-right: 600px;
     background: rgb(255, 165, 0, 0.85);
     border: 2px solid white;
     border-radius: 30px;
@@ -184,7 +122,6 @@
 {
     .buy-btn
     {
-     margin-left:20px;
     margin-top: 20px;
     height: 65px;
     width: 150px;
