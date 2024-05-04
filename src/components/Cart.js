@@ -2,12 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import "./Cart.css"
-import { CartData } from "./data/CartData";
+import Swal from 'sweetalert2';
 import { type } from "@testing-library/user-event/dist/type";
+
 const Cart = () => {
 
-    const [quantities, setQuantities] = useState(CartData.map(item => ({ id: item.id, quantity: 1 })));
-    const [totalPrice, setTotalPrice] = useState(0);
     const [cartProducts, setCartProducts] = useState([]);
 
     useEffect(() => {
@@ -16,6 +15,21 @@ const Cart = () => {
             setCartProducts(JSON.parse(storedCartProducts));
         }
     }, []);
+
+    const removeProductFromCart = (index) => {
+        const updatedCartProducts = [...cartProducts];
+        updatedCartProducts.splice(index, 1);
+        setCartProducts(updatedCartProducts);
+        localStorage.setItem("cartProducts", JSON.stringify(updatedCartProducts));
+
+        Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: 'Product Removed From Cart',
+      });
+    };
+
+    
 
     return(
         <>
@@ -39,19 +53,19 @@ const Cart = () => {
                     <tbody>
                         {cartProducts.map((item, index) => {
                             return(
-                                <tr>
-                                    <td><div className={item.imageClass}></div>
-                                    <img src={item.imageUrl}></img>
+                                <tr key={index}>
+                                    <td>
+                                    <img className="imageee-1" src={item.imageUrl}></img>
                                     </td>
                                     <td className="product-name">{item.name}</td>
                                     <td className="product-price">{item.price}</td>
                                     <td className="plus-minus">
                                     <button className="plus"><i className="fa-solid fa-minus"></i></button>
-                                    <span className="qty-no">{quantities.find(qty => qty.id === item.id).quantity}</span>
+                                    <span className="qty-no"></span>
                                     <button className="plus"><i className="fa-solid fa-plus"></i></button>
                                 </td>
                                     <td className="product-total-price">{item.totalPrice}</td>
-                                    <td><button className="cross-icon"><i class="fa-solid fa-xmark"></i></button></td>
+                                    <td><button className="cross-icon" onClick={() => removeProductFromCart(index)}><i class="fa-solid fa-xmark"></i></button></td>
                                 </tr>
                             )
                         })}
