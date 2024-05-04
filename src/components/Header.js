@@ -73,10 +73,10 @@ const Header = () => {
               <li class="nav-item">
                 <Link
                   className="nav-link"
-                  to="bestseller"
+                  to="cart"
                   onClick={changehamburger}
                 >
-                  Shop Detail
+                  Cart
                 </Link>
               </li>
               <li class="nav-item">
@@ -97,17 +97,8 @@ const Header = () => {
           </div>
 
           <div className="nav-icons">
-            {/* <div className="search-magnifying-glass">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div> */}
-            <div className="cart-shopping-bag">
-              <Link to="/cart">
-                <i class="fa-solid fa-bag-shopping"></i>
-                {/* <span className="cart-value">3</span> */}
-              </Link>
-            </div>
             <div className="user-profile">
-              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-circle-user"></i>
             </div>
           </div>
         </div>
