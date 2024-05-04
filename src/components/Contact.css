@@ -10,6 +10,7 @@
 .contact-image-heading{
     align-items: center;
     color: white;
+    font-size: 40px;
     font-weight: 700;
     position: absolute;
     z-index: 1;
