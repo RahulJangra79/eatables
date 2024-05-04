@@ -17,34 +17,29 @@ const Header = () => {
   return (
     <div>
       <div className="navbar">
-        <div className="navbar1 d-sm-none d-md-none d-lg-flex">
+        <div className="navbar1">
           <div className="navbar1-left-side">
-            <p>
-              <i class="fas fa-map-marker-alt me-1 text-orange"></i>{" "}
-              <a href="#" class="text-white">
-                123 Street, New York
-              </a>
+            <p className="navbar1-left-side-para">
+              <i class="fa-solid orange fa-location-dot"></i>
+              <a className="navbar1-left-side-link">123 Street, New York</a>
             </p>
-            <p>
-              <i class="fas fa-envelope me-2 text-orange"></i>
-              <a href="#" class="text-white">
-                Email@Example.com
-              </a>
+            
+            <p className="navbar1-left-side-para">
+              <i class="fa-solid fa-envelope"></i>
+              <a className="navbar1-left-side-link">Email@Example.com</a>
             </p>
           </div>
           <div className="navbar1-right-side">
-            <a href="#" class="text-white mx-1">
-              <p class="text-white">
-                Privacy Policy<span>/</span>
-              </p>
+            <a className="navbar1-right-side-link">
+              <p className="navbar1-right-side-para">Privacy Policy<span>/</span></p>
             </a>
-            <a href="#" class="text-white">
-              <p class="text-white">
-                Terms of Use<span>/</span>
-              </p>
+
+            <a className="navbar1-right-side-link">
+              <p className="navbar1-right-side-para">Terms of Use<span>/</span></p>
             </a>
-            <a href="#" class="text-white">
-              <p class="text-white">Sales and Refunds</p>
+            
+            <a className="navbar1-right-side-link">
+              <p className="navbar1-right-side-para">Sales and Refunds</p>
             </a>
           </div>
         </div>

@@ -14,69 +14,62 @@
         margin: 0 auto;
     }
 
-    @media only screen and (min-width:415px) and (max-width:970px)
-    {
-        width: 100%;
-        height: 100px;
-        margin: 0;
-    }
-
-    @media only screen and (max-width:415px)
+    @media only screen and (max-width:970px)
     {
         width: 100%;
         height: 100px;
         margin: 0;  
     }
 }
-.navbar1 
-{
-    background-color: #a22458;
+.navbar1{
+    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0px 20px;
-    padding: 25px;
-    width: 100%;
-    height: 50px;
     border-radius: 50px 15px;
     font-size: 1rem;
     align-items: center;
+    padding: 0 20px;
+    background-color: #a22458;
+    color: white;
 
     @media only screen and (max-width:970px)
     {
         display: none !important;
     }
 }
-.navbar1-left-side {
+.navbar1-left-side{
     display: flex;
+    justify-content: left;
 }
-
-.navbar1-right-side {
-    display: flex;
+.navbar1-left-side i{
+    font-size: 18px;
+    color: orange;
 }
-
-.navbar1-left-side a,
-.navbar1-right-side a {
+.navbar1-left-side-para{
+    margin: 0 20px;
+    cursor: pointer;
+}
+.navbar1-left-side-link{
+    color: white;
     text-decoration: none;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
 }
-.navbar1-left-side p{
+.navbar1-right-side{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+.navbar1-right-side-para{
     margin: 0 10px;
+    cursor: pointer;
 }
-.navbar1-right-side p{
-    margin: 0 10px;
-}
-/* .navbar1-right-side p:hover{
-    color: #ffd000;
-} */
-.navbar1-right-side span{
+.navbar1-right-side-para span{
     margin-left: 20px;
 }
-
-.text-orange {
-    color: #ffd000;
+.navbar1-right-side-link{
+    color: white;
+    text-decoration: none;
 }
-
 /* ------navbar 2 ------- */
 
 .navbar2{
@@ -86,22 +79,16 @@
     width: 100%;
     margin: 0 20px;
     align-items: center;
+    position: sticky !important;
+    top: 0;
 
-    @media only screen and (max-width:415px)
-    {
-        height: 100px;
-        width: 100%;
-    }
-    
-    @media only screen and (min-width:415px) and (max-width:970px)
+    @media only screen and (max-width:970px)
     {
         height: 100px;
         width: 100%;
     }
 }
 .eatables-h1 h1{
-    padding: 20px 0;
-    margin: 0 0 8px;
     font-size: 40px;
     font-family: Raleway;
     font-weight: 700;
@@ -143,11 +130,13 @@
 }
 .nav-item a{
     color: #444749;
-    padding: 5px 15px;
+    margin: 0 5px;
+    font-family: Raleway;
     font-size: larger;
 }
 .nav-item a:hover{
-    color: #a22458;
+    color: #a22458;    
+    box-shadow: 0px 2px 0px #a22458;
 }
 .nav-link{
     color: #a22458;
@@ -176,8 +165,11 @@
 
 
 .nav-icons{
+    width: 200px;
     display: flex;
+    justify-content: end;
     align-items: center;
+    cursor: pointer;
 
     @media only screen and (max-width:415px)
     {
