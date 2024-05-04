@@ -75,7 +75,7 @@ const ManageProducts = () => {
           <tr>
             <th>Name</th>
             <th>Price</th>
-            <th>Description</th>
+            <th style={{ minWidth: '350px' , width: '600px' }}>Description</th>
             <th>Status</th>
             <th>Discount</th>
             <th>Rating</th>
