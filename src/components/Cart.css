@@ -36,7 +36,7 @@
     width: 100px;
 }
 .cart-table td {
-    padding: 8px 20px;
+    padding: 8px;
     border-bottom: 1px solid #ddd;
 }
 .cart-table tbody tr:hover {
@@ -56,9 +56,8 @@
     padding: 0 10px;
 }
 .imageee-1{
-    background-image: url("/src/Images/pizza.jpg");
-    height: 85px;
-    width: 85px;
+    height: 85px !important;
+    width: 85px !important;
     border-radius: 50%;
     background-size: cover;
 }
