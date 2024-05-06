@@ -58,7 +58,7 @@ const Our_products = () => {
                   <img className="product-image" src={item.imageUrl}></img>
                   <div className="product-down-part">
                     <h3>{item.name}</h3>
-                    <p>{truncateDescription(item.description, 70)}</p>
+                    <p>{truncateDescription(item.description, 60)}</p>
                     <div className="order-details">
                       <h3 className="product-price">$ {item.price}</h3>
                       <button

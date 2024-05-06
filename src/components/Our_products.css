@@ -51,30 +51,6 @@
     height: 215px !important;
     transform: scale(1.2);
 }
-#burger1{
-    background-image: url("/src/Images/burger.jpg");
-}
-#samosa2{
-    background-image: url("/src/Images/samosa.jpg");
-}
-#steam-momos3{
-    background-image: url("/src/Images/steam-momos.jpg");
-}
-#dahi-golgappe4{
-    background-image: url("/src/Images/dahi-golgappe.jpg");
-}
-#noodles5{
-    background-image: url("/src/Images/noodles.jpg");
-}
-#spring-roll6{
-    background-image: url("/src/Images/spring-roll.jpg");
-}
-#manchurian7{
-    background-image: url("/src/Images/manchurian.jpg");
-}
-#pizza8{
-    background-image: url("/src/Images/pizza.jpg");
-}
 .product-item{
     width: 305px;
     height: auto;
@@ -97,6 +73,13 @@
 }
 .product-down-part{
     padding: 20px;
+}
+.product-down-part h3{
+    font-size: 30px;
+}
+.product-down-part p{
+    font-size: 16px;
+    height: 60px;
 }
 .order-details{
     display: flex;
