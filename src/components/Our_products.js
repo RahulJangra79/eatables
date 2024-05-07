@@ -4,25 +4,44 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 const Our_products = () => {
-  const handleCart = (product) => {
-    let cartProducts = localStorage.getItem("cartProducts");
-    if (cartProducts) {
-      cartProducts = JSON.parse(cartProducts);
-    } else {
-      cartProducts = [];
-    }
-    cartProducts.push(product);
-    localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-    console.log(
-      "Cart Products:",
-      JSON.parse(localStorage.getItem("cartProducts"))
-    );
+  const handleCart = (product, quantity = 1) => {
+  let cartProducts = localStorage.getItem("cartProducts");
+  if (cartProducts) {
+    cartProducts = JSON.parse(cartProducts);
+  } else {
+    cartProducts = [];
+  }
 
-    Swal.fire({
-      icon: "success",
-      title: "Product Added To Cart",
-    });
-  };
+  // Calculate total price
+  const totalPrice = product.price * quantity;
+
+  // Check if the product is already in the cart
+  const existingProductIndex = cartProducts.findIndex(
+    (cartProduct) => cartProduct._id === product._id
+  );
+
+  if (existingProductIndex !== -1) {
+    // If the product exists, update the quantity and total price
+    cartProducts[existingProductIndex].quantity += quantity;
+    cartProducts[existingProductIndex].totalPrice += totalPrice;
+  } else {
+    // If the product doesn't exist, add it to the cart with the specified quantity and total price
+    cartProducts.push({ ...product, quantity, totalPrice });
+  }
+
+  localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+
+  console.log(
+    "Cart Products:",
+    JSON.parse(localStorage.getItem("cartProducts"))
+  );
+
+  Swal.fire({
+    icon: "success",
+    title: "Product Added To Cart",
+  });
+};
+
 
   function truncateDescription(description, maxLength) {
     if (description.length > maxLength) {
