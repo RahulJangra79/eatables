@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 import "./Cart.css"
 import Swal from 'sweetalert2';
-import { type } from "@testing-library/user-event/dist/type";
 
 const Cart = () => {
 
@@ -29,7 +28,30 @@ const Cart = () => {
       });
     };
 
-    
+    const handleIncrementQuantity = (index) => {
+        const updatedCartProducts = [...cartProducts];
+        const product = updatedCartProducts[index];
+        product.quantity++;
+        product.totalPrice = product.price * product.quantity;
+        setCartProducts(updatedCartProducts);
+        localStorage.setItem("cartProducts", JSON.stringify(updatedCartProducts));
+    };
+
+    const handleDecrementQuantity = (index) => {
+        const updatedCartProducts = [...cartProducts];
+        const product = updatedCartProducts[index];
+        if (product.quantity > 1) {
+            product.quantity--;
+            product.totalPrice = product.price * product.quantity;
+            setCartProducts(updatedCartProducts);
+            localStorage.setItem("cartProducts", JSON.stringify(updatedCartProducts));
+        }
+    };
+    const shippingCost = 3.00;
+
+    const subTotal = cartProducts.reduce((total, product) => total + product.totalPrice, 0);
+
+    const totalPrice = subTotal + shippingCost;
 
     return(
         <>
@@ -51,7 +73,7 @@ const Cart = () => {
                     </thead>
 
                     <tbody>
-                        {cartProducts.map((item, index) => {
+                        {cartProducts?.map((item, index) => {
                             return(
                                 <tr key={index}>
                                     <td>
@@ -60,9 +82,9 @@ const Cart = () => {
                                     <td className="product-name">{item.name}</td>
                                     <td className="product-price">{item.price}</td>
                                     <td className="plus-minus">
-                                    <button className="plus"><i className="fa-solid fa-minus"></i></button>
-                                    <span className="qty-no"></span>
-                                    <button className="plus"><i className="fa-solid fa-plus"></i></button>
+                                    <button className="plus" onClick={() => handleDecrementQuantity(index)}><i className="fa-solid fa-minus"></i></button>
+                                    <span className="qty-no">{item.quantity}</span>
+                                    <button className="plus" onClick={() => handleIncrementQuantity(index)}><i className="fa-solid fa-plus"></i></button>
                                 </td>
                                     <td className="product-total-price">{item.totalPrice}</td>
                                     <td><button className="cross-icon" onClick={() => removeProductFromCart(index)}><i class="fa-solid fa-xmark"></i></button></td>
@@ -82,7 +104,7 @@ const Cart = () => {
                     <h1 className="cart-total"><span className="cart-total-font-weight">Cart</span> Total</h1>
                    <div className="cart-total-2">
                         <div className="subtotal">Subtotal</div>
-                        <div className="subtotal-price">$ 8.99</div>
+                        <div className="subtotal-price">$ {subTotal}</div>
                    </div>
                    <div className="cart-total-2">
                         <div className="shipping">Shipping</div>
@@ -92,7 +114,7 @@ const Cart = () => {
                    </div>
                    <div className="cart-total-2 total-border">
                         <div className="total">Total</div>
-                        <div className="total-price">$ 9.99</div>
+                        <div className="total-price">$ {totalPrice}</div>
                    </div>
                    <div className="proceed-checkout">
                         <button className="coupon">PROCEED CHECKOUT</button>
