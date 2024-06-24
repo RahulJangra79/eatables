@@ -32,7 +32,7 @@ const ManageProducts = () => {
         Swal.fire({
           icon: 'success',
           title: 'Success',
-          text: 'Product Updated Successfully',
+          text: 'Product Updated Successfully',                   
         });
         // ********
         const updatedData = data.map((product) => {

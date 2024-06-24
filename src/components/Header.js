@@ -52,7 +52,7 @@ const Header = () => {
           <div className={` ${isHamburgershow ? "nav" : "nav-menu"}`}>
             <ul class="nav justify-content-center">
               <li class="nav-item">
-                <Link className="nav-link" to="/" onClick={changehamburger}>
+                <Link className="nav-link" to="/Home" onClick={changehamburger}>
                   Home
                 </Link>
               </li>
