@@ -9,7 +9,7 @@ const ManageProducts = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get("http://localhost:2000/products")
       .then((response) => {
         console.log("response Data =>", response?.data?.products);
         setData(response?.data?.products);
@@ -25,7 +25,7 @@ const ManageProducts = () => {
 
   const handleUpdate = (item) => {
     axios
-      .put(`http://localhost:5000/products/${item._id}`, item)
+      .put(`http://localhost:2000/products/${item._id}`, item)
       .then((response) => {
         console.log("Data Updated Successfully!");
         // ********
@@ -51,7 +51,7 @@ const ManageProducts = () => {
 
   async function deleteUser(id) {
     console.log("id=>", id)
-    let result = await fetch("http://localhost:5000/products/" + id, {
+    let result = await fetch("http://localhost:2000/products/" + id, {
       method: 'DELETE'
     });
     result = await result.json();
