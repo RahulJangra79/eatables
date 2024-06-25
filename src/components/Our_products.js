@@ -54,7 +54,7 @@ const Our_products = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get("http://localhost:2000/products")
       .then((response) => {
         console.log("responseData=>", response.data.products);
         setProductData(response.data.products);
