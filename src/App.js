@@ -26,7 +26,6 @@ function App() {
       {/* {!isLoggedIn ? (
         <Login onLoginSuccess={handleLoginSuccess} />
       ) : ( */}
-      <Login/>
         <BrowserRouter>
           <Header />
           <Routes>
