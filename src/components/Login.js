@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Login.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
-const Login = ({ onLoginSuccess }) => {
+const Login = ({ isLogin, setIsLogin }) => {
   const [isRegistering, setIsRegistering] = useState(false);
   const [formData, setFormData] = useState({
     username: '',
@@ -10,6 +11,8 @@ const Login = ({ onLoginSuccess }) => {
     password: '',
     confirmPassword: ''
   });
+
+  const navigate = useNavigate();
 
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
@@ -35,7 +38,7 @@ const Login = ({ onLoginSuccess }) => {
       }
       // Handle registration logic here
       try {
-        const response = await axios.post('http://localhost:5000/register', {
+        const response = await axios.post('http://localhost:2000/register', {
           username,
           email,
           password
@@ -48,7 +51,7 @@ const Login = ({ onLoginSuccess }) => {
       const { email, password } = formData;
       // Handle login logic here
       try {
-        const response = await axios.post('http://localhost:5000/login', {
+        const response = await axios.post('http://localhost:2000/login', {
           email,
           password
         });
@@ -57,7 +60,9 @@ const Login = ({ onLoginSuccess }) => {
         console.log("token=>", token);
         localStorage.setItem('jwt', token);
         setMessage(response.data.message);
-        onLoginSuccess(); // Set login state to true upon successful login
+        // onLoginSuccess(); // Call onLoginSuccess callback
+        setIsLogin(true);
+        navigate('/Home');
       } catch (error) {
         setError(error.response?.data?.message || 'Error logging in');
       }

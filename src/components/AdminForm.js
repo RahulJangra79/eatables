@@ -85,7 +85,7 @@ function AdminForm() {
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button className='admin-form-btn' type="submit">Submit</button>
       </form>
     </div>
   );

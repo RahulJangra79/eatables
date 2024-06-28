@@ -64,7 +64,7 @@
     box-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
   }
   
-  button {
+  .admin-form-btn {
     padding: 10px 20px;
     background-color: #a22458f0;
     border: none;

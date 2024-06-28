@@ -200,11 +200,25 @@
 
 /* Navigation Icons Styles */
 .nav-icons {
-  width: 200px;
-  display: flex;
+  /* width: 200px; */
+  display: inline-flex;
   justify-content: end;
   align-items: center;
   cursor: pointer;
+}
+
+.header-button{
+  padding: 10px;
+  color: white;
+  font-size: small;
+  margin: 0 5px;
+  height: 30px;
+  line-height: 1px;
+  background-color: #a22458;
+  text-decoration: none;
+}
+.header-button:hover{
+  background-color: #651d3b;
 }
 
 /* Hide navigation icons on smaller screens */
