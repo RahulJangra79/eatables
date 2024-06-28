@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+.AdminForm {
+    font-family: 'Arial', sans-serif;
+    /* color: #333; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #f4f4f9; */
+    /* min-height: 100vh; */
+    justify-content: center;
+  }
+  
+  .App-header {
+    margin-bottom: 20px;
+    /* padding: 10px; */
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .App-header h1 {
+    font-size: 1.8em;
+    color: #a22458f0;
+    margin: 0;
+  }
+  
+  .form-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #61dafb;
+    box-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #a22458f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #35012f;
+  }
+  
