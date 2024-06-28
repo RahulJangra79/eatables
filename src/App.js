@@ -10,36 +10,27 @@ import ProductForm from './components/ProductForm';
 import Cart from './components/Cart';
 import Contact from './components/Contact';
 import ManageProducts from './components/ManageProducts';
-import AdminForm from './components/AdminForm';
-import { IoLogIn } from 'react-icons/io5';
 import Login from './components/Login';
 
 function App() {
-  // const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  // const handleLoginSuccess = () => {
-  //   setIsLoggedIn(true);
-  // };
+  const [isLogin, setIsLogin] = useState(false);
 
   return (
     <div className="App">
-      {/* {!isLoggedIn ? (
-        <Login onLoginSuccess={handleLoginSuccess} />
-      ) : ( */}
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="/Home" element={<Home />} />
-            <Route path="/Cart" element={<Cart />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/Our_products" element={<Our_products />} />
-            <Route path="/productform" element={<ProductForm />} />
-            <Route path="/Bestseller" element={<Products />} />
-            <Route path="/manageproducts" element={<ManageProducts />} />
-          </Routes>
-          <Footer1 />
-        </BrowserRouter>
-      )
+      <BrowserRouter>
+        <Header isLogin={isLogin} setIsLogin={setIsLogin} />
+        <Routes>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Our_products" element={<Our_products />} />
+          <Route path="/login_signUp" element={<Login isLogin={isLogin} setIsLogin={setIsLogin} />} />
+          <Route path="/productform" element={<ProductForm />} />
+          <Route path="/Bestseller" element={<Products />} />
+          <Route path="/manageproducts" element={<ManageProducts />} />
+        </Routes>
+        <Footer1 />
+      </BrowserRouter>
     </div>
   );
 }
