@@ -10,7 +10,9 @@ import ProductForm from './components/ProductForm';
 import Cart from './components/Cart';
 import Contact from './components/Contact';
 import ManageProducts from './components/ManageProducts';
-// import Login from './components/Login';
+import AdminForm from './components/AdminForm';
+import { IoLogIn } from 'react-icons/io5';
+import Login from './components/Login';
 
 function App() {
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -24,6 +26,7 @@ function App() {
       {/* {!isLoggedIn ? (
         <Login onLoginSuccess={handleLoginSuccess} />
       ) : ( */}
+      <Login/>
         <BrowserRouter>
           <Header />
           <Routes>

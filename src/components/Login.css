@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
 .auth-page {
     max-width: 400px;
     margin: 0 auto;
@@ -33,7 +36,8 @@
     width: 100%;
     padding: 0.5rem;
     margin-top: 1rem;
-    background-color: #007bff;
+    background-color: #a22458f0;
+    border: 2px solid black;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -41,7 +45,7 @@
   }
   
   .auth-page button:hover {
-    background-color: #0056b3;
+    background-color: #670533;
   }
   
   .auth-page .toggle-btn {
