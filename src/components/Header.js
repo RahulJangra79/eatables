@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import Cart from "./Cart";
 
-const Header = () => {
+const Header = ({ isLogin, setIsLogin}) => {
+
+  const handleLogout = () => {
+    setIsLogin(false);
+    localStorage.removeItem('jwt');
+  };
+
   const [isHamburgershow, setIsHamburgershow] = useState(false);
 
   const changehamburger = () => {
     setIsHamburgershow(!isHamburgershow);
   };
+
+  
 
   const hamburgerFunction = () => {
     setIsHamburgershow(!isHamburgershow);
@@ -92,6 +99,13 @@ const Header = () => {
           </div>
 
           <div className="nav-icons">
+            <div>
+              {isLogin ? (
+              <button className="header-button" onClick={handleLogout}>Logout</button>
+              ) : (
+                <button><Link className="header-button" to="/login_signUp">Login/SignUp</Link></button>
+              )}
+            </div>
             <div className="user-profile">
               <i class="fa-solid fa-circle-user"></i>
             </div>
