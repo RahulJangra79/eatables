@@ -28,6 +28,7 @@ function App() {
       ) : ( */}
         <BrowserRouter>
           <Header />
+          {/* <AdminForm/> */}
           <Routes>
             <Route path="/Home" element={<Home />} />
             <Route path="/Cart" element={<Cart />} />

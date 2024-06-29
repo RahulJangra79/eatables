@@ -26,6 +26,11 @@
     margin: 0;
   }
   
+  .AdminForm form{
+    width: 100%;
+    max-width: 350px;
+  }
+
   .form-container {
     background: #fff;
     padding: 20px 30px;
@@ -64,7 +69,7 @@
     box-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
   }
   
-  button {
+  .admin-form-btn {
     padding: 10px 20px;
     background-color: #a22458f0;
     border: none;
@@ -76,7 +81,7 @@
     transition: background-color 0.3s ease;
   }
   
-  button:hover {
+  .admin-form-btn:hover {
     background-color: #35012f;
   }
   
