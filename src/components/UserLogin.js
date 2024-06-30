@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './Login.css';
+import './UserLogin.css';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
-const Login = ({ isLogin, setIsLogin }) => {
+const UserLogin = ({ isUserLogin, setIsUserLogin }) => {
   const [isRegistering, setIsRegistering] = useState(false);
   const [formData, setFormData] = useState({
     username: '',
@@ -61,7 +61,7 @@ const Login = ({ isLogin, setIsLogin }) => {
         localStorage.setItem('jwt', token);
         setMessage(response.data.message);
         // onLoginSuccess(); // Call onLoginSuccess callback
-        setIsLogin(true);
+        setIsUserLogin(true);
         navigate('/Home');
       } catch (error) {
         setError(error.response?.data?.message || 'Error logging in');
@@ -140,8 +140,9 @@ const Login = ({ isLogin, setIsLogin }) => {
       <button className="toggle-btn" onClick={toggleForm}>
         {isRegistering ? 'Switch to Login' : 'Switch to Register'}
       </button>
+      <Link className='admin-login-link' to="admin_Login">Login As Admin</Link>
     </div>
   );
 };
 
-export default Login;
+export default UserLogin;

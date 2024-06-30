@@ -51,8 +51,14 @@
   
   .auth-page .toggle-btn {
     background-color: #6c757d;
+    margin-bottom: 30px;
   }
   
   .auth-page .toggle-btn:hover {
     background-color: #5a6268;
+  }
+
+  .admin-login-link{
+    text-decoration: none;
+    color: #670533;
   }
