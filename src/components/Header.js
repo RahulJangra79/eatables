@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-const Header = ({ isLogin, setIsLogin}) => {
+const Header = ({ isUserLogin, setIsUserLogin}) => {
 
   const handleLogout = () => {
-    setIsLogin(false);
+    setIsUserLogin(false);
     localStorage.removeItem('jwt');
   };
 
@@ -100,10 +100,10 @@ const Header = ({ isLogin, setIsLogin}) => {
 
           <div className="nav-icons">
             <div>
-              {isLogin ? (
+              {isUserLogin ? (
               <button className="header-button" onClick={handleLogout}>Logout</button>
               ) : (
-                <button><Link className="header-button" to="/login_signUp">Login/SignUp</Link></button>
+                <button><Link className="header-button" to="/login_signUp">Login / SignUp</Link></button>
               )}
             </div>
             <div className="user-profile">

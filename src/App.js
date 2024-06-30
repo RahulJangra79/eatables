@@ -10,21 +10,24 @@ import ProductForm from './components/ProductForm';
 import Cart from './components/Cart';
 import Contact from './components/Contact';
 import ManageProducts from './components/ManageProducts';
-import Login from './components/Login';
+import UserLogin from './components/UserLogin';
+import AdminLogin from './components/AdminLogin';
 
 function App() {
-  const [isLogin, setIsLogin] = useState(false);
+  const [isUserLogin, setIsUserLogin] = useState(false);
+  const [isAdminLogin, setIsAdminLogin] = useState(false);
 
   return (
     <div className="App">
       <BrowserRouter>
-        <Header isLogin={isLogin} setIsLogin={setIsLogin} />
+        <Header isUserLogin={isUserLogin} setIsUserLogin={setIsUserLogin} />
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Our_products" element={<Our_products />} />
-          <Route path="/login_signUp" element={<Login isLogin={isLogin} setIsLogin={setIsLogin} />} />
+          <Route path="/Login_signUp" element={<UserLogin isUserLogin={isUserLogin} setIsUserLogin={setIsUserLogin} />} />
+          <Route path="/Login_signUp/admin_login" element={<AdminLogin isAdminLogin={isAdminLogin} setIsAdminLogin={setIsAdminLogin} />} />
           <Route path="/productform" element={<ProductForm />} />
           <Route path="/Bestseller" element={<Products />} />
           <Route path="/manageproducts" element={<ManageProducts />} />
