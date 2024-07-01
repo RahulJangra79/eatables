@@ -1,7 +1,7 @@
 import React from "react";
 import "./Bestseller.css";
-import { bestsellerData } from "./data/BestsellerData";
-import { bestsellerData_second } from "./data/BestsellerData";
+import { bestsellerData } from "../data/BestsellerData";
+import { bestsellerData_second } from "../data/BestsellerData";
 
 const Products = () => {
   return (

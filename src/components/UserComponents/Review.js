@@ -1,6 +1,6 @@
 import React from "react";
 import "./review.css"
-import { reviewData } from "./data/ReviewData";
+import { reviewData } from "../data/ReviewData";
 
 const Review = () =>{
     return(

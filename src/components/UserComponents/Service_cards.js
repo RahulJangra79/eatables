@@ -1,7 +1,7 @@
 import React from "react";
 import "./Service_cards.css"
-import {service} from "./data/ServiceCardContent.js";
-const Service_card = () => {
+import {service} from "../data/ServiceCardContent.js";
+const ServiceCard = () => {
     console.log("data=>", service)
     return(
         <div className="service-card-outer"> 
@@ -18,4 +18,4 @@ const Service_card = () => {
     )
 }
 
-export default Service_card
+export default ServiceCard
