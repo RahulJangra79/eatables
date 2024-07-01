@@ -1,6 +1,6 @@
 import React from "react";
 import "./testimonial.css"
-import { testimonialData } from "./data/ReviewData";
+import { testimonialData } from "../data/ReviewData";
 const Testimonial = () =>{
     return(
         <div className="component10">

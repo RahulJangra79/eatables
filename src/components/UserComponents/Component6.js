@@ -1,6 +1,6 @@
 import React from "react";
 import "./Our_products.css"
-import { component6Data } from "./data/Component6Data";
+import { component6Data } from "../data/Component6Data";
 
 const Component6 = () => {
     return(

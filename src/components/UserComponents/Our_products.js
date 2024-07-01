@@ -3,7 +3,7 @@ import "./Our_products.css";
 import axios from "axios";
 import Swal from "sweetalert2";
 
-const Our_products = () => {
+const OurProducts = () => {
   const handleCart = (product, quantity = 1) => {
   let cartProducts = localStorage.getItem("cartProducts");
   if (cartProducts) {
@@ -101,4 +101,4 @@ const Our_products = () => {
   );
 };
 
-export default Our_products;
+export default OurProducts;

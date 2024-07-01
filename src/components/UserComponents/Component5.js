@@ -1,6 +1,6 @@
 import React from "react";
 import "./Component5.css"
-import { component5Data } from "./data/Component5Data";
+import { component5Data } from "../data/Component5Data";
 
 const Component5 = () => {
 

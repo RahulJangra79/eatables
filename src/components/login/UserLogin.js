@@ -83,7 +83,7 @@ const UserLogin = ({ isUserLogin, setIsUserLogin }) => {
 
   return (
     <div className="auth-page">
-      <h2>{isRegistering ? 'Register' : 'Login'}</h2>
+      <h2>{isRegistering ? 'User Register' : 'User Login'}</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {message && <p style={{ color: 'green' }}>{message}</p>}
       <form onSubmit={handleSubmit}>
